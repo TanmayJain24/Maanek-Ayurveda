@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/maanek_logo.webp" type="image/x-icon">
+    <title><%= service.title %> | Maanek Ayurveda Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="<%= service.description %>">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ayur-navbar fixed-top">
+        <div class="container"> 
+            <a class="navbar-brand ayur-nav-brand" href="#">
+                <img src="/images/maanek_logo.webp" alt="Maanek" style="height: 50px; width: 50px;">
+                <span style="color: var(--ayur-primary); padding: 0px;">Maanek Ayurveda</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link active" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="ayur-btn ayur-btn-outline-dark" href="/consultation">Book Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="ayur-hero" style="background: linear-gradient(rgba(30, 42, 29, 0.8), rgba(30, 42, 29, 0.8)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'); min-height: 60vh;" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1><%= service.title %></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/services">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><%= service.slug.charAt(0).toUpperCase() + service.slug.slice(1) %></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="ayur-section">
+        <div class="container">
+        <div class="row">
+            <!-- Left: Service Details -->
+            <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="ayur-section-title text-start"><%= service.subtitle %></h2>
+            <p><%= service.description %></p>
+
+            <div class="ayur-price-badge-lg ayur-mb-md">Price: <%= service.pricing %></div>
+            <div class="ayur-price-badge-lg ayur-mb-md">Duration: <%= service.duration %></div>
+
+            <!-- Features -->
+            <h3>Features</h3>
+            <div class="row g-4 ayur-mb-lg">
+                <% service.features.forEach(feature => { %>
+                <div class="col-md-6" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="ayur-icon-box h-100">
+                    <div class="ayur-icon">
+                        <i class="<%= feature.icon %>"></i>
+                    </div>
+                    <h4><%= feature.title %></h4>
+                    <p><%= feature.detail %></p>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+
+            <!-- Benefits -->
+            <h3>Benefits</h3>
+            <div class="row g-4 ayur-mb-lg">
+                <% service.benefits.forEach(group => { %>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="ayur-card h-100">
+                    <div class="ayur-card-body">
+                        <h4 class="ayur-text-primary"><i class="<%= group.icon %> me-2"></i><%= group.category %></h4>
+                        <ul>
+                        <% group.items.forEach(benefit => { %>
+                            <li><%= benefit %></li>
+                        <% }) %>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+
+            <!-- Treatment Steps -->
+            <h3>Treatment Process</h3>
+            <div class="ayur-steps ayur-mb-lg">
+                <% service.steps.forEach((step, index) => { %>
+                <div class="ayur-step" data-aos="fade-up" data-aos-delay="150">
+                    <div class="ayur-step-number"><%= index + 1 %></div>
+                    <div class="ayur-step-content">
+                    <h5><%= step.title %></h5>
+                    <p><%= step.description %></p>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+
+            <!-- Suitability Section -->
+            <h3><%= service.suitability.heading %></h3>
+            <div class="row g-4 ayur-mb-lg">
+            <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+                <div class="ayur-card h-100">
+                <div class="ayur-card-body">
+                    <h5 class="ayur-text-primary"><i class="fas fa-check-circle me-2"></i>Ideal For</h5>
+                    <ul>
+                    <% service.suitability.idealFor.forEach(item => { %>
+                        <li><%= item %></li>
+                    <% }) %>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="flip-right" data-aos-delay="300">
+                <div class="ayur-card h-100">
+                <div class="ayur-card-body">
+                    <h5 class="ayur-text-primary"><i class="fas fa-times-circle me-2"></i>Not Recommended For</h5>
+                    <ul>
+                    <% service.suitability.notRecommendedFor.forEach(item => { %>
+                        <li><%= item %></li>
+                    <% }) %>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Aftercare -->
+            <h3>Aftercare Recommendations</h3>
+            <div class="ayur-card ayur-mb-lg" style="height: fit-content;" data-aos="fade-up" data-aos-delay="100">
+                <div class="ayur-card-body">
+                <ul>
+                    <% service.aftercare.forEach(item => { %>
+                    <li><%= item %></li>
+                    <% }) %>
+                </ul>
+                </div>
+            </div>
+            </div>
+
+            <!-- Right: Booking Form -->
+            <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="ayur-card sticky-top" style="top: 100px; height: fit-content;">
+                <div class="ayur-card-body">
+                <h3>Book This Treatment</h3>
+                <form style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <input type="text" class="form-control" placeholder="Full Name" required />
+                    <input type="email" class="form-control" placeholder="Email" required />
+                    <input type="tel" class="form-control" placeholder="Phone" required />
+                    <input type="date" class="form-control" required />
+                    <textarea class="form-control" placeholder="Message (Optional)" rows="3"></textarea>
+                    <button type="submit" class="ayur-btn ayur-btn-outline-dark">Book Now</button>
+                </form>
+                <hr />
+                <div class="text-center">
+                    <p>Or call to book</p>
+                    <a href="tel:+911234567890" class="ayur-btn ayur-btn-outline-dark w-100">
+                    <i class="fas fa-phone me-2"></i>+91 88797 91008
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <!-- Testimonials -->
+    <section class="ayur-section ayur-bg-light">
+        <div class="container">
+        <h2 class="ayur-section-title text-center">What Our Clients Say</h2>
+        <div class="row">
+            <% service.testimonials.forEach(t => { %>
+            <div class="col-md-4 ayur-mb-md" data-aos="zoom-in-up" data-aos-delay="150">
+                <div class="ayur-testimonial">
+                <div class="d-flex align-items-center ayur-mb-sm">
+                    <img src="<%= t.image %>" class="ayur-client-img me-3" />
+                    <div>
+                    <h5 class="ayur-mb-0"><%= t.name %></h5>
+                    <div class="ayur-rating">
+                        <% for (let i = 1; i <= 3; i++) { %>
+                        <% if (i <= Math.floor(t.rating)) { %>
+                            <i class="fas fa-star"></i>
+                        <% } else if (i - t.rating < 1) { %>
+                            <i class="fas fa-star-half-alt"></i>
+                        <% } else { %>
+                            <i class="far fa-star"></i>
+                        <% } %>
+                        <% } %>
+                    </div>
+                    </div>
+                </div>
+                <p>"<%= t.feedback %>"</p>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="ayur-section">
+        <div class="container">
+            <h2 class="ayur-section-title text-center">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <% service.faqs.forEach((faq, idx) => { %>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="<%= idx * 100 %>">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button <%= idx === 0 ? '' : 'collapsed' %>" type="button" data-bs-toggle="collapse" data-bs-target="#faq<%= idx %>">
+                            <%= faq.question %>
+                        </button>
+                    </h2>
+                    <div id="faq<%= idx %>" class="accordion-collapse collapse <%= idx === 0 ? 'show' : '' %>" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body"><p><%= faq.answer %></p></div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="ayur-section ayur-bg-secondary">
+        <div class="container text-center">
+            <h2 class="ayur-text-light" data-aos="fade-right" data-aos-duration="1000"><%= service.cta.heading %></h2>
+            <p class="lead ayur-text-light ayur-mb-lg" data-aos="fade-left" data-aos-duration="1000"><%= service.cta.subheading %></p>
+            <a href="/consultation" class="ayur-btn ayur-btn-outline-light me-3">Book Now</a>
+            <a href="/contact" class="ayur-btn ayur-btn-outline-light">Ask Questions</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="ayur-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ayur-mb-lg">
+                    <h5 style="color: var(--ayur-yellow);">Maanek Ayurveda</h5>
+                    <p style="color: var(--ayur-yellow);">Your sanctuary for authentic Ayurvedic healing. We're dedicated to helping you achieve optimal health through personalized, holistic care.</p>
+                    <div class="ayur-mt-md">
+                        <a href="https://m.facebook.com/582995368220422/" class="ayur-social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/maanekayurvedapanchkarmaclinic?igsh=MWhvd3cwd3ppcmdnbg==" class="ayur-social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918879791008" class="ayur-social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@Drankitamodi" class="ayur-social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 ayur-mb-md">
+                    <h5>Quick Links</h5>
+                    <ul class="ayur-footer-links" style="padding: 0px;">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/blogs">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 ayur-mb-md">
+                    <h5>Our Services</h5>
+                    <ul class="ayur-footer-links" style="padding: 0px;">
+                        <li><a href="/services/panchakarma">Panchakarma Therapy</a></li>
+                        <li><a href="/services/abhyanga">Ayurvedic Massage</a></li>
+                        <li><a href="/services/siravedh">Siravedh (Venesection)</a></li>
+                        <li><a href="/services/shiroabhyanga">Shiroabhyanga</a></li>
+                        <li><a href="/services/virechana">Virechana</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="ayur-footer-links" style="padding: 0px;">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> C 3, Prashant Appartment, Tirandaz, Opposite IIT, Powai, Hare Krishna Road Main Gate Road, Powai-400076</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 88797 91008</li>
+                        <li><i class="fas fa-envelope me-2"></i> maanek2907@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Sat: 9am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ayur-copyright text-center">
+                <p style="color: var(--ayur-yellow);">&copy; 2025 Maanek Ayurveda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

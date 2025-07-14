@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/maanek_logo.webp" type="image/x-icon">
+    <title>Contact Us | Maanek Ayurveda and Panchkarma Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light ayur-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand ayur-nav-brand d-flex align-items-center" href="#">
+                <img src="/images/maanek_logo.webp" alt="Maanek" style="height: 50px; width: 50px; margin-right: 10px;">
+                <div class="d-flex flex-column">
+                    <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1;">Maanek Ayurveda and</span>
+                    <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1">Panchakarma Clinic</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link active" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="ayur-btn ayur-btn-outline-dark" href="/consultation">Book Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="ayur-hero" data-aos="slide-down" data-aos-duration="600">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Contact Us</h1>
+                    <p class="lead">We'd love to hear from you - whether you're booking a therapy or have questions about Ayurveda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="ayur-section">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                    <h2 class="ayur-section-title">Send Us a Message</h2>
+                    <form method="POST" action="/contact" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="ayur-btn ayur-btn-outline-dark">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+                    <h2 class="ayur-section-title">Get in Touch</h2>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> C 3, Prashant Appartment, Tirandaz, Opposite I.I.t, Powai, Hare Krishna Road Main Gate Road, Powai-400076</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 88797 91008</li>
+                        <li><i class="fas fa-envelope me-2"></i> maanek2907@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon - Sat: 9:00 AM - 8:00 PM</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <h5>Follow us</h5>
+                        <a href="#" class="social-body-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-body-icon me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-body-icon me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-body-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        <h5>Find us on the map</h5>
+                        <div style="border-radius: 12px; overflow: hidden;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3769.608230926803!2d72.91704299999999!3d19.1248353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDA3JzI5LjQiTiA3MsKwNTUnMDEuNCJF!5e0!3m2!1sen!2sin!4v1751082422495!5m2!1sen!2sin" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="ayur-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ayur-mb-lg">
+                    <h5 style="color: var(--ayur-yellow);">Maanek Ayurveda</h5>
+                    <p style="color: var(--ayur-yellow);">Your sanctuary for authentic Ayurvedic healing. We're dedicated to helping you achieve optimal health through personalized, holistic care.</p>
+                    <div class="ayur-mt-md">
+                        <a href="https://m.facebook.com/582995368220422/" class="ayur-social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/maanekayurvedapanchkarmaclinic?igsh=MWhvd3cwd3ppcmdnbg==" class="ayur-social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918879791008" class="ayur-social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@Drankitamodi" class="ayur-social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 ayur-mb-md">
+                    <h5>Quick Links</h5>
+                    <ul class="ayur-footer-links" style="padding: 0px;">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/blogs">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 ayur-mb-md">
+                    <h5>Our Services</h5>
+                    <ul class="ayur-footer-links" style="padding: 0px;">
+                        <li><a href="/services/panchakarma">Panchakarma Therapy</a></li>
+                        <li><a href="/services/abhyanga">Ayurvedic Massage</a></li>
+                        <li><a href="/services/siravedh">Siravedh (Venesection)</a></li>
+                        <li><a href="/services/shiroabhyanga">Shiroabhyanga</a></li>
+                        <li><a href="/services/virechana">Virechana</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="ayur-footer-links" style="padding: 0px;">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> C 3, Prashant Appartment, Tirandaz, Opposite IIT, Powai, Hare Krishna Road Main Gate Road, Powai-400076</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 88797 91008</li>
+                        <li><i class="fas fa-envelope me-2"></i> maanek2907@gmail.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Sat: 9am - 8pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ayur-copyright text-center">
+                <p style="color: var(--ayur-yellow);">&copy; 2025 Maanek Ayurveda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html>

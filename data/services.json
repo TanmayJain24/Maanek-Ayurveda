@@ -1,0 +1,2011 @@
+[
+  {
+    "slug": "panchakarma",
+    "title": "Panchakarma Therapy",
+    "subtitle": "Ayurvedic Detox & Rejuvenation",
+    "description": "Panchakarma is a comprehensive Ayurvedic detox treatment that eliminates toxins, restores balance, and strengthens the immune system through a series of therapeutic procedures tailored to your dosha.",
+    "pricing": "₹5,000/session | 7-day package: ₹30,000",
+    "heroImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "90-120 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Panchakarma?",
+      "idealFor": [
+        "Chronic digestive issues",
+        "Respiratory conditions",
+        "Joint pain & arthritis",
+        "Skin disorders",
+        "Stress & insomnia",
+        "Seasonal detoxification"
+      ],
+      "notRecommendedFor": [
+        "Pregnant women",
+        "Children below 12",
+        "Very weak patients",
+        "During acute fever",
+        "Certain heart conditions"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-leaf",
+        "title": "Detoxification",
+        "detail": "Eliminates toxins from the body through natural purification methods."
+      },
+      {
+        "icon": "fas fa-heartbeat",
+        "title": "Holistic Healing",
+        "detail": "Addresses physical, mental, and emotional health for total well-being."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Physical Benefits",
+        "icon": "fas fa-heart",
+        "items": [
+          "Improves digestion and metabolism",
+          "Boosts immunity",
+          "Reduces inflammation and pain",
+          "Enhances skin clarity"
+        ]
+      },
+      {
+        "category": "Mental Benefits",
+        "icon": "fas fa-brain",
+        "items": [
+          "Reduces stress and anxiety",
+          "Promotes mental clarity",
+          "Balances mood swings"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Pre-Treatment Consultation", "description": "Dosha analysis and body type assessment." },
+      { "title": "Oleation & Sudation", "description": "Internal and external oil treatments to mobilize toxins." },
+      { "title": "Main Detox Procedures", "description": "Vamana, Virechana, Basti, Nasya or Raktamokshana as needed." },
+      { "title": "Post-Treatment Rejuvenation", "description": "Diet, herbs, and lifestyle guidance for long-term benefits." }
+    ],
+    "aftercare": [
+      "Follow light diet for 3-5 days",
+      "Avoid excessive exercise and stress",
+      "Stay hydrated with herbal teas",
+      "Continue recommended herbs or tonics"
+    ],
+    "testimonials": [
+      {
+        "name": "Rahul Sharma",
+        "image": "https://randomuser.me/api/portraits/men/12.jpg",
+        "feedback": "Panchakarma was a life-changer! My energy levels are up, and my skin feels clearer.",
+        "rating": 5
+      },
+      {
+        "name": "Aarti Mehta",
+        "image": "https://randomuser.me/api/portraits/women/22.jpg",
+        "feedback": "I feel deeply detoxed and more balanced emotionally.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "How should I prepare for Panchakarma?", "answer": "We recommend a 3-5 day preparatory phase with light meals, avoiding processed foods, alcohol, and caffeine. You'll receive personalized dietary guidelines during your initial consultation." },
+      { "question": "Is Panchakarma safe for everyone?", "answer": "It is generally safe but requires evaluation by an Ayurvedic doctor." },
+      { "question": "How soon will I see results?", "answer": "Some benefits like improved digestion and sleep are often noticed within 3-5 days. Full results typically manifest 2-4 weeks after completing the program." },
+      { "question": "Is Panchakarma safe for everyone?", "answer": "It is generally safe but requires evaluation by an Ayurvedic doctor." },
+      { "question": "Can I go to work during the process?", "answer": "It is recommended to rest and avoid stress during the detox period." }
+    ],
+    "cta": {
+      "heading": "Begin Your Healing Journey",
+      "subheading": "Book your Panchakarma therapy and experience holistic wellness"
+    }
+  },
+
+
+
+  {
+    "slug": "abhyanga",
+    "title": "Abhyanga Massage",
+    "subtitle": "Therapeutic Oil Massage",
+    "description": "Abhyanga is a traditional Ayurvedic full-body massage using warm herbal oils tailored to your dosha. This deeply relaxing treatment nourishes tissues, improves circulation, and promotes detoxification.",
+    "pricing": "₹3,200/session | Package of 5: ₹14,000",
+    "heroImage": "https://images.unsplash.com/photo-1650044252595-cacd425982ff?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "duration": "60 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Abhyanga?",
+      "idealFor": [
+        "Chronic fatigue and stress",
+        "Poor circulation",
+        "Stiff joints and muscle tension",
+        "Dry or aging skin",
+        "Nervous system imbalances"
+      ],
+      "notRecommendedFor": [
+        "Immediately after heavy meals",
+        "Fever or cold/flu symptoms",
+        "Skin infections or open wounds",
+        "Severe inflammation or injuries"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-spa",
+        "title": "Full-Body Relaxation",
+        "detail": "Soothing strokes calm the nervous system and promote lymphatic drainage."
+      },
+      {
+        "icon": "fas fa-oil-can",
+        "title": "Custom Oils",
+        "detail": "Oils selected based on dosha imbalance (Sesame, Coconut, Herbal blends)."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Physical Benefits",
+        "icon": "fas fa-heart",
+        "items": [
+          "Improves blood circulation",
+          "Lubricates joints and muscles",
+          "Enhances skin texture and glow",
+          "Boosts immune function",
+          "Promotes better sleep"
+        ]
+      },
+      {
+        "category": "Mental Benefits",
+        "icon": "fas fa-brain",
+        "items": [
+          "Reduces stress and anxiety",
+          "Calms the nervous system",
+          "Improves mental clarity",
+          "Enhances emotional balance"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Dosha Assessment",
+        "description": "Therapist selects herbal oil blend as per your constitution."
+      },
+      {
+        "title": "Warm Oil Application",
+        "description": "Oil is warmed and applied with rhythmic strokes."
+      },
+      {
+        "title": "Full Body Massage",
+        "description": "Includes scalp and soles for full relaxation."
+      },
+      {
+        "title": "Rest Period",
+        "description": "10–15 minutes rest to allow deeper tissue absorption."
+      }
+    ],
+    "aftercare": [
+      "Rest for 30 minutes",
+      "Keep oil for 1–2 hours before showering",
+      "Drink warm water or herbal tea",
+      "Avoid heavy meals"
+    ],
+    "testimonials": [
+      {
+        "name": "Neha Kapoor",
+        "image": "https://randomuser.me/api/portraits/women/32.jpg",
+        "feedback": "The Abhyanga massage melted away my work stress. My skin has never felt so nourished!",
+        "rating": 5
+      },
+      {
+        "name": "Arjun Reddy",
+        "image": "https://randomuser.me/api/portraits/men/45.jpg",
+        "feedback": "Regular Abhyanga helped restore mobility after knee surgery. Amazing results!",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I shower before or after?",
+        "answer": "Shower before your session. After treatment, wait 1–2 hours before washing off the oil."
+      },
+      {
+        "question": "Can I eat before the session?",
+        "answer": "Have a light meal 1–2 hours before. Avoid heavy foods."
+      }
+    ],
+    "cta": {
+      "heading": "Experience Deep Relaxation",
+      "subheading": "Book your therapeutic Abhyanga massage today"
+    }
+  },
+  
+  
+
+
+  {
+    "slug": "siravedh",
+    "title": "Siravedh (Venesection)",
+    "subtitle": "Blood Purification Therapy",
+    "description": "Siravedha, or venesection, involves puncturing veins to extract blood, primarily used for conditions involving blood stagnation or impurities, offering benefits like reducing inflammation, relieving pain, and improving circulation.",
+    "pricing": "₹500/session",
+    "heroImage": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "15 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Siravedh?",
+      "idealFor": [
+        "Vatakantaka (plantar fasciitis)",
+        "Conditions related to blood stagnation",
+        "Chronic inflammation & pain",
+        "Persistent headaches",
+        "Circulatory problems",
+        "Pitta and Rakta Dushti Vikara"
+      ],
+      "notRecommendedFor": [
+        "Anemic patients",
+        "Pregnant women",
+        "Children below 16",
+        "Those with low blood pressure",
+        "During acute infections"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-tint",
+        "title": "Blood Purification",
+        "detail": "Removes impure blood to restore optimal circulation and tissue health."
+      },
+      {
+        "icon": "fas fa-fire-extinguisher",
+        "title": "Pitta Pacification",
+        "detail": "Effectively cools aggravated Pitta dosha linked to blood disorders."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Therapeutic Benefits",
+        "icon": "fas fa-heartbeat",
+        "items": [
+          "Reduces inflammation & swelling",
+          "Alleviates chronic pain",
+          "Improves blood circulation",
+          "Detoxifies impure blood"
+        ]
+      },
+      {
+        "category": "Condition-Specific Relief",
+        "icon": "fas fa-bone",
+        "items": [
+          "Effective for plantar fasciitis",
+          "Addresses blood stagnation disorders",
+          "Helps manage skin conditions",
+          "Reduces migraine frequency"
+        ]
+      }
+    ],
+    "steps": [
+      { 
+        "title": "Pulse Diagnosis", 
+        "description": "Assessment of blood quality and dosha imbalance." 
+      },
+      { 
+        "title": "Localization", 
+        "description": "Identification of optimal vein site based on condition." 
+      },
+      { 
+        "title": "Sterile Puncture", 
+        "description": "Precise venesection with surgical-grade tools." 
+      },
+      { 
+        "title": "Post-Procedure Care", 
+        "description": "Application of herbal antiseptics and cooling compresses." 
+      }
+    ],
+    "aftercare": [
+      "Avoid strenuous activity for 24 hours",
+      "Apply medicated ghee to puncture site",
+      "Consume cooling foods (e.g., coconut water, pomegranate)",
+      "No alcohol or spicy foods for 48 hours"
+    ],
+    "testimonials": [
+      {
+        "name": "Vikram Patel",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "feedback": "My plantar fasciitis pain reduced by 80% after just one session!",
+        "rating": 5
+      },
+      {
+        "name": "Neha Reddy",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg",
+        "feedback": "Effective for my chronic migraines - fewer episodes now.",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { 
+        "question": "Is Siravedh painful?", 
+        "answer": "The procedure involves minimal discomfort, similar to a blood test. Herbal numbing agents may be used for sensitive patients." 
+      },
+      { 
+        "question": "How frequently can it be done?", 
+        "answer": "Typically 1-3 sessions per month, depending on the condition and individual constitution." 
+      },
+      { 
+        "question": "What's the extracted blood volume?", 
+        "answer": "Approximately 30-100ml per session, carefully monitored by the practitioner." 
+      },
+      { 
+        "question": "Are there dietary restrictions before treatment?", 
+        "answer": "Fast for 3 hours prior. Avoid fermented, sour, or spicy foods 24 hours before." 
+      }
+    ],
+    "cta": {
+      "heading": "Purify Your Blood, Restore Vitality",
+      "subheading": "Book your Siravedh session with our Ayurvedic specialists"
+    }
+  },
+
+
+  {
+    "slug": "shiroabhyanga",
+    "title": "Shiroabhyanga",
+    "subtitle": "Marma Point Head Massage for Vitality",
+    "description": "An Ayurvedic head massage targeting vital marma points to regulate prana (vital energy), relieve stress, and nourish the scalp. Promotes relaxation, hair health, and mental clarity through rhythmic oil application and acupressure techniques.",
+    "pricing": "₹800/session | 5-session package: ₹3,500",
+    "heroImage": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "20 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Shiroabhyanga?",
+      "idealFor": [
+        "Stress & mental fatigue",
+        "Tension headaches",
+        "Insomnia & poor sleep quality",
+        "Dry scalp or dandruff",
+        "Hair thinning/premature graying",
+        "Vata imbalance (anxiety, restlessness)"
+      ],
+      "notRecommendedFor": [
+        "Open wounds/scalp infections",
+        "Severe migraines (acute phase)",
+        "High fever",
+        "Recent head injury"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-hand-holding-heart",
+        "title": "Marma Therapy",
+        "detail": "Stimulates energy points to restore pranic flow and release blocked emotions."
+      },
+      {
+        "icon": "fas fa-spa",
+        "title": "Hair Rejuvenation",
+        "detail": "Uses herb-infused oils like Bhringraj or Amla to strengthen hair follicles."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Physical Benefits",
+        "icon": "fas fa-head-side-cough",
+        "items": [
+          "Relieves sinus pressure & headaches",
+          "Reduces scalp dryness/flaking",
+          "Slows hair fall & premature graying"
+        ]
+      },
+      {
+        "category": "Mental Benefits",
+        "icon": "fas fa-cloud-moon",
+        "items": [
+          "Induces deep relaxation",
+          "Calms racing thoughts",
+          "Improves sleep onset"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Dosha Analysis", "description": "Therapist selects oil (e.g., coconut for Pitta, sesame for Vata) and pressure intensity." },
+      { "title": "Warm Oil Application", "description": "Herbal oil is gently massaged into scalp, neck, and shoulders." },
+      { "title": "Marma Stimulation", "description": "Circular pressure on key points like Adhipati (crown) and Sthapani (third eye)." },
+      { "title": "Steam Towel Wrap", "description": "Optional warm towel wrap to enhance oil absorption (5 mins)." }
+    ],
+    "aftercare": [
+      "Leave oil on scalp for 1-2 hours (or overnight) before washing",
+      "Avoid cold drafts post-massage",
+      "Drink warm water to flush toxins",
+      "Repeat 1-2x weekly for chronic issues"
+    ],
+    "testimonials": [
+      {
+        "name": "Neha Kapoor",
+        "image": "https://randomuser.me/api/portraits/women/33.jpg",
+        "feedback": "My chronic migraines reduced after just 3 sessions. Now I gift this to my overworked colleagues!",
+        "rating": 5
+      },
+      {
+        "name": "Arjun Patel",
+        "image": "https://randomuser.me/api/portraits/men/84.jpg",
+        "feedback": "Noticed less hair fall and deeper sleep. Perfect lunch-break therapy.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "How is this different from a salon head massage?", "answer": "Salon massages focus on relaxation; Shiroabhyanga uses Ayurvedic oils and marma science for therapeutic benefits." },
+      { "question": "Will my hair feel greasy afterward?", "answer": "Oil can be lightly rinsed with herbal powder (Arishtaka) if needed, but leaving it enhances benefits." },
+      { "question": "Can it help with hair regrowth?", "answer": "Yes, when combined with internal herbs and diet changes. Results visible in 8-12 weeks." },
+      { "question": "Is it painful?", "answer": "Pressure is adjusted to your comfort—should feel soothing, not painful." }
+    ],
+    "cta": {
+      "heading": "Revitalize Your Mind & Scalp",
+      "subheading": "Book a Shiroabhyanga session today"
+    }
+  },
+
+  
+  {
+    "slug": "pada-abhyanga",
+    "title": "Pada Abhyanga",
+    "subtitle": "Grounding Foot Massage for Holistic Wellness",
+    "description": "An Ayurvedic foot massage that stimulates vital marma points to promote grounding, improve circulation, and relieve tension. This therapy balances Vata dosha, detoxifies the body, and induces deep relaxation by connecting to the earth's energy.",
+    "pricing": "₹800/session | 5-session package: ₹3,500",
+    "heroImage": "https://cure-ayurvedique-bourgogne.com/wp-content/uploads/2021/02/PADAABHYANGA-980x654.jpeg.webp",
+    "duration": "20 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Pada Abhyanga?",
+      "idealFor": [
+        "Fatigue & low energy",
+        "Poor circulation/cold feet",
+        "Insomnia & anxiety (Vata imbalance)",
+        "Edema/swollen feet",
+        "Plantar fasciitis",
+        "Those seeking grounding/emotional balance"
+      ],
+      "notRecommendedFor": [
+        "Open wounds/cuts on feet",
+        "Severe varicose veins",
+        "High fever",
+        "Deep vein thrombosis (DVT)"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-shoe-prints",
+        "title": "Marma Activation",
+        "detail": "Targets key points like Kshipra (heel) and Talahridaya (sole) to regulate organ function."
+      },
+      {
+        "icon": "fas fa-water",
+        "title": "Detox Support",
+        "detail": "Stimulates lymphatic drainage and kidney meridians to flush toxins."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Physical Benefits",
+        "icon": "fas fa-heartbeat",
+        "items": [
+          "Improves blood circulation",
+          "Reduces foot pain/swelling",
+          "Enhances joint flexibility",
+          "Strengthens immune function (via spleen meridian)"
+        ]
+      },
+      {
+        "category": "Mental Benefits",
+        "icon": "fas fa-cloud-moon",
+        "items": [
+          "Induces instant relaxation",
+          "Grounds scattered energy",
+          "Reduces anxiety & overthinking"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Warm Oil Application", "description": "Herbal oils (e.g., sesame or mustard) are warmed and applied to feet/ankles." },
+      { "title": "Marma Stimulation", "description": "Therapist applies thumb pressure to key points for 2-3 minutes each." },
+      { "title": "Rhythmic Massage", "description": "Long strokes along meridians; knuckle kneading on soles." },
+      { "title": "Steam Towel Wrap", "description": "Optional warm towel wrap to lock in warmth (5 mins)." }
+    ],
+    "aftercare": [
+      "Wear socks to retain heat post-massage",
+      "Avoid cold surfaces for 1-2 hours",
+      "Dright Drink warm water with ginger to enhance detox",
+      "Practice grounding (walk barefoot on grass if possible)"
+    ],
+    "testimonials": [
+      {
+        "name": "Deepika R.",
+        "image": "https://randomuser.me/api/portraits/women/68.jpg",
+        "feedback": "As a nurse, my feet ache daily. This massage feels like a reset button—I sleep like a baby afterward!",
+        "rating": 5
+      },
+      {
+        "name": "Rohan M.",
+        "image": "https://randomuser.me/api/portraits/men/92.jpg",
+        "feedback": "Fixed my chronic cold feet in 3 sessions. Now my productivity spikes post-massage!",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { "question": "Can I walk afterward?", "answer": "Yes, but avoid strenuous activity. The oils may make floors slippery—wear provided grip socks." },
+      { "question": "Why sesame/mustard oil?", "answer": "Sesame balances Vata; mustard boosts circulation. Your therapist will choose based on your dosha." },
+      { "question": "Is it ticklish?", "answer": "Firm pressure is used—most clients adapt within minutes and find it deeply relaxing." },
+      { "question": "How often should I get this?", "answer": "Weekly for chronic issues, monthly for maintenance. Ideal with Abhyanga (full-body massage)." }
+    ],
+    "cta": {
+      "heading": "Reconnect with the Earth",
+      "subheading": "Treat your feet to restorative care today"
+    }
+  },
+  
+
+  {
+    "slug": "udvartana",
+    "title": "Udvartana",
+    "subtitle": "Herbal Powder Massage for Detox & Slimming",
+    "description": "A vigorous Ayurvedic massage using medicinal herbal powders/pastes to stimulate circulation, break down cellulite, and detoxify tissues. Ideal for weight management, skin rejuvenation, and metabolic disorders like diabetes. The rhythmic strokes exfoliate, nourish, and tone the body.",
+    "pricing": "₹2,400/session | 5-session package: ₹10,800",
+    "heroImage": "https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "60 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Udvartana?",
+      "idealFor": [
+        "Obesity/weight management",
+        "Cellulite & loose skin",
+        "Diabetic neuropathy",
+        "Poor circulation",
+        "Kapha imbalance (lethargy, water retention)",
+        "Pre/post-natal care (with modified herbs)"
+      ],
+      "notRecommendedFor": [
+        "Open wounds/rash",
+        "High Pitta (inflamed skin)",
+        "Severe osteoporosis",
+        "Fever or acute infections",
+        "Recent surgery"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-spa",
+        "title": "Lymphatic Activation",
+        "detail": "Herbal powders like Triphala or Guggul boost lymphatic drainage to flush toxins."
+      },
+      {
+        "icon": "fas fa-weight",
+        "title": "Fat Metabolism",
+        "detail": "Deep friction techniques break down adipocytes (fat cells) for natural slimming."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Physical Benefits",
+        "icon": "fas fa-heartbeat",
+        "items": [
+          "Reduces cellulite & inches",
+          "Improves insulin sensitivity",
+          "Exfoliates dead skin cells",
+          "Enhances muscle tone"
+        ]
+      },
+      {
+        "category": "Metabolic Benefits",
+        "icon": "fas fa-fire",
+        "items": [
+          "Stimulates agni (digestive fire)",
+          "Balances cholesterol",
+          "Alleviates water retention"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Herbal Prep", "description": "Powder blend (e.g., chickpea flour + Trikatu) mixed with oils/buttermilk based on dosha." },
+      { "title": "Upward Strokes", "description": "Therapist massages toward the heart to align with lymphatic flow." },
+      { "title": "Targeted Areas", "description": "Focus on thighs, abdomen, and arms for cellulite/fat reduction." },
+      { "title": "Steam Therapy", "description": "Optional herbal steam (Swedana) to open pores and enhance detox (10 mins)." }
+    ],
+    "aftercare": [
+      "Shower with lukewarm water post-massage",
+      "Drink detox teas (coriander/cumin)",
+      "Avoid heavy meals for 4-6 hours",
+      "Follow with 30-min light walk"
+    ],
+    "testimonials": [
+      {
+        "name": "Ananya K.",
+        "image": "https://randomuser.me/api/portraits/women/51.jpg",
+        "feedback": "Lost 3 inches off my waist in 6 sessions! My skin feels firmer and glowing.",
+        "rating": 5
+      },
+      {
+        "name": "Rajiv B.",
+        "image": "https://randomuser.me/api/portraits/men/33.jpg",
+        "feedback": "As a diabetic, my numbness reduced significantly. Now a weekly ritual!",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Is it painful?", "answer": "Firm pressure is used, but therapists adjust for comfort. Feels like deep exfoliation." },
+      { "question": "How soon to see weight loss?", "answer": "Visible inch loss in 4-6 sessions when combined with diet. Fat breakdown begins immediately." },
+      { "question": "Can I do this at home?", "answer": "DIY versions exist, but professional therapists target marma points for full benefits." },
+      { "question": "Why the upward strokes?", "answer": "Mimics lymphatic drainage pathways to prevent toxin reabsorption." }
+    ],
+    "cta": {
+      "heading": "Revitalize Your Body’s Metabolism",
+      "subheading": "Book an Udvartana session today"
+    }
+  },
+
+
+  {
+    "slug": "netra-tarpana",
+    "title": "Netra Tarpana",
+    "subtitle": "Ghee Eye Bath for Vision & Vitality",
+    "description": "A specialized Ayurvedic therapy where medicated ghee is pooled around the eyes to nourish ocular tissues, relieve strain, and enhance vision. Ideal for digital eye fatigue, dryness, and degenerative conditions like cataracts. Revitalizes muscles, nerves, and tear ducts through deep lubrication.",
+    "pricing": "₹1,200/session | 5-session package: ₹5,400",
+    "heroImage": "https://atmabodhwellness.com/wp-content/uploads/2023/11/image-55.png",
+    "duration": "30 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Netra Tarpana?",
+      "idealFor": [
+        "Computer Eye Syndrome (digital strain)",
+        "Dry/red eyes",
+        "Dark circles & puffiness",
+        "Early-stage cataracts",
+        "Conjunctivitis recovery",
+        "Vision clarity maintenance"
+      ],
+      "notRecommendedFor": [
+        "Active eye infections",
+        "Open eye wounds",
+        "Severe glaucoma",
+        "Allergy to ghee/herbs used"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-eye",
+        "title": "Tissue Regeneration",
+        "detail": "Medicated ghee (e.g., Triphala Ghrita) penetrates deep to repair corneal dryness."
+      },
+      {
+        "icon": "fas fa-sun",
+        "title": "Light Sensitivity Relief",
+        "detail": "Soothes photophobia and reduces dependency on artificial tears."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Ocular Benefits",
+        "icon": "fas fa-low-vision",
+        "items": [
+          "Reduces eye strain & fatigue",
+          "Improves tear production",
+          "Slows cataract progression",
+          "Strengthens optic nerves"
+        ]
+      },
+      {
+        "category": "Cosmetic Benefits",
+        "icon": "fas fa-moon",
+        "items": [
+          "Lightens dark circles",
+          "Diminishes under-eye puffiness",
+          "Brightens sclera (white of eyes)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Eye Assessment", "description": "Therapist examines for redness/dryness and selects ghee (plain or herb-infused)." },
+      { "title": "Dough Dam Creation", "description": "A natural black gram dough ring is placed around eyes to hold ghee." },
+      { "title": "Ghee Pooling", "description": "Warm ghee is poured into the dam and retained for 15-20 minutes." },
+      { "title": "Gentle Cleansing", "description": "Ghee is drained; eyes are wiped with rosewater cotton pads." }
+    ],
+    "aftercare": [
+      "Avoid screens for 2-3 hours post-therapy",
+      "Wear sunglasses if stepping into sunlight",
+      "Apply cooled rosewater compress at home",
+      "Follow with Netra Basti (extended therapy) for chronic issues"
+    ],
+    "testimonials": [
+      {
+        "name": "Meera S.",
+        "image": "https://randomuser.me/api/portraits/women/29.jpg",
+        "feedback": "As a programmer, my eye dryness vanished after 2 sessions. No more redness!",
+        "rating": 5
+      },
+      {
+        "name": "Aditya R.",
+        "image": "https://randomuser.me/api/portraits/men/44.jpg",
+        "feedback": "My ophthalmologist noted improved lens clarity post 6-week Tarpana course.",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { "question": "Is it safe?", "answer": "Absolutely—ghee is sterile and non-irritating. Dough prevents leakage into eyes." },
+      { "question": "Can I wear contacts afterward?", "answer": "Wait 4-6 hours. The ghee residue may blur vision temporarily." },
+      { "question": "How often for chronic issues?", "answer": "Weekly for 1 month, then monthly. Cataract support requires 3+ months." },
+      { "question": "Why ghee instead of oils?", "answer": "Ghee’s molecular structure mimics tear film lipids, enhancing absorption." }
+    ],
+    "cta": {
+      "heading": "Restore Your Natural Vision",
+      "subheading": "Book Netra Tarpana for screen-weary or aging eyes"
+    }
+  },
+
+
+  {
+    "slug": "nasya",
+    "title": "Nasya Therapy",
+    "subtitle": "Nasal Detox for Neurological & Sinus Health",
+    "description": "An essential Panchakarma treatment involving the administration of medicated oils/herbal preparations through nasal passages to purify the central nervous system, relieve sinus congestion, and enhance Prana (life force). Effective for migraines, chronic allergies, and neurological conditions.",
+    "pricing": "₹700/session | 7-session course: ₹4,200",
+    "heroImage": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "15 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Nasya?",
+      "idealFor": [
+        "Chronic sinusitis/rhinitis",
+        "Migraines & tension headaches",
+        "Facial paralysis (Bell’s palsy)",
+        "Seasonal allergies",
+        "Brain fog & memory issues",
+        "TMJ or jaw tension"
+      ],
+      "notRecommendedFor": [
+        "Nasal bleeding/epistaxis",
+        "Acute sinus infection",
+        "Pregnancy (first trimester)",
+        "Recent nasal surgery"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-brain",
+        "title": "Neuro-Cleansing",
+        "detail": "Oils like Anu Taila bypass the blood-brain barrier to detoxify neural pathways."
+      },
+      {
+        "icon": "fas fa-wind",
+        "title": "Sinus Decongestion",
+        "detail": "Liquefies and expels Kapha toxins (mucus) via sneezing/drainage."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Therapeutic Benefits",
+        "icon": "fas fa-head-side-virus",
+        "items": [
+          "Reduces migraine frequency",
+          "Clears post-nasal drip",
+          "Improves olfactory function",
+          "Stimulates pituitary gland"
+        ]
+      },
+      {
+        "category": "Preventive Benefits",
+        "icon": "fas fa-shield-virus",
+        "items": [
+          "Prevents sinus infections",
+          "Enhances mental clarity",
+          "Delays neurodegenerative diseases",
+          "Boosts immunity (via nasal mucosa)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Pre-Nasya Abhyanga", "description": "Face/neck massage with warm oil to open channels (5 mins)." },
+      { "title": "Steam Inhalation", "description": "Herbal steam (e.g., eucalyptus) to loosen mucus (3 mins)." },
+      { "title": "Oil Administration", "description": "Therapist tilts head back; 2-5 drops per nostril of medicated oil." },
+      { "title": "Post-Nasya Rest", "description": "Lie still for 2 mins, then spit out oil/mucus residue." }
+    ],
+    "aftercare": [
+      "Avoid cold drafts for 1 hour",
+      "Sniff warm salt water if drainage continues",
+      "Skip meals for 30 mins post-therapy",
+      "Practice gentle Kapalabhati pranayama"
+    ],
+    "testimonials": [
+      {
+        "name": "Vikram J.",
+        "image": "https://randomuser.me/api/portraits/men/71.jpg",
+        "feedback": "10+ years of sinusitis gone in 3 sessions. I breathe like a teenager again!",
+        "rating": 5
+      },
+      {
+        "name": "Priya N.",
+        "image": "https://randomuser.me/api/portraits/women/63.jpg",
+        "feedback": "My neurologist was shocked when my migraine meds dosage halved after Nasya.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Will oil drain into my throat?", "answer": "Proper head positioning prevents this. You’ll only taste a hint of oil temporarily." },
+      { "question": "Is sneezing normal?", "answer": "Yes! It’s the body expelling toxins. 3-5 sneezes per nostril is ideal." },
+      { "question": "Can I do this at home?", "answer": "Basic Nasya with plain ghee is safe, but medicated oils require professional guidance." },
+      { "question": "Why mornings are ideal?", "answer": "Sinuses are most receptive during 6-10 AM (Kapha time in Ayurveda)." }
+    ],
+    "cta": {
+      "heading": "Breathe Deep, Think Clear",
+      "subheading": "Schedule Nasya for sinus or neurological relief"
+    }
+  },
+
+
+  {
+    "slug": "mukha-abhyanga",
+    "title": "Mukha Abhyanga",
+    "subtitle": "Rejuvenating Ayurvedic Facial Massage",
+    "description": "A luxurious facial massage using dosha-specific oils and marma point stimulation to nourish skin, release tension, and promote a youthful glow. This therapy combats signs of aging, reduces stress, and enhances natural radiance by improving blood circulation and lymphatic drainage.",
+    "pricing": "₹1,400/session | 5-session glow package: ₹6,300",
+    "heroImage": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "40 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Mukha Abhyanga?",
+      "idealFor": [
+        "Dull or fatigued skin",
+        "Premature aging/wrinkles",
+        "Dark circles & puffiness",
+        "TMJ or facial muscle tension",
+        "Stress-related jaw clenching",
+        "Pre-wedding/event glow prep"
+      ],
+      "notRecommendedFor": [
+        "Active acne/cysts",
+        "Open wounds or rashes",
+        "Rosacea (flare-up phase)",
+        "Allergy to oils used"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-seedling",
+        "title": "Marma Activation",
+        "detail": "Stimulates key points like Sthapani (third eye) and Apanga (under-eye) to release blocked energy."
+      },
+      {
+        "icon": "fas fa-water",
+        "title": "Lymphatic Drainage",
+        "detail": "Gentle strokes flush toxins, reducing puffiness and dark circles."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Skin Benefits",
+        "icon": "fas fa-spa",
+        "items": [
+          "Boosts collagen production",
+          "Improves skin elasticity",
+          "Reduces fine lines",
+          "Fades pigmentation"
+        ]
+      },
+      {
+        "category": "Wellness Benefits",
+        "icon": "fas fa-brain",
+        "items": [
+          "Relieves tension headaches",
+          "Calms the nervous system",
+          "Enhances mental clarity",
+          "Reduces stress hormones"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Dosha Analysis", "description": "Therapist selects oil (e.g., almond for Vata, coconut for Pitta, sesame for Kapha)." },
+      { "title": "Warm Oil Application", "description": "Herbal-infused oil is massaged into face, neck, and décolletage." },
+      { "title": "Marma Point Work", "description": "Circular pressure on 10+ facial marma points (e.g., Shankha for migraines)." },
+      { "title": "Steam & Herbal Mask", "description": "Optional rose/neem steam followed by a clay/ubtan mask (10 mins)." }
+    ],
+    "aftercare": [
+      "Avoid washing face for 2 hours",
+      "Apply rosewater mist to tone",
+      "Sleep on silk pillowcases to retain glow",
+      "Repeat weekly for chronic issues"
+    ],
+    "testimonials": [
+      {
+        "name": "Divya A.",
+        "image": "https://randomuser.me/api/portraits/women/48.jpg",
+        "feedback": "My makeup artist noticed how plump my skin looked at my wedding—no filters needed!",
+        "rating": 5
+      },
+      {
+        "name": "Arjun M.",
+        "image": "https://randomuser.me/api/portraits/men/75.jpg",
+        "feedback": "As a lawyer, my jaw tension vanished. Clients say I look ‘less intimidating’ now!",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Will it cause breakouts?", "answer": "Non-comedogenic oils are used. Breakouts are rare but may indicate detox—consult your therapist." },
+      { "question": "How is this different from spa facials?", "answer": "Focuses on energy flow (prana) and doshic balance, not just surface-level cleansing." },
+      { "question": "Can men benefit?", "answer": "Absolutely! Especially for razor burn, stress lines, or post-shave hydration." },
+      { "question": "When to see results?", "answer": "Instant glow, but collagen remodeling takes 4-6 sessions for lasting effects." }
+    ],
+    "cta": {
+      "heading": "Unlock Your Skin’s Inner Light",
+      "subheading": "Book a Mukha Abhyanga for stress-free radiance"
+    }
+  },
+
+
+  {
+    "slug": "karna-pooran",
+    "title": "Karna Pooran",
+    "subtitle": "Medicated Ear Therapy for Auditory & Neurological Health",
+    "description": "A traditional Ayurvedic treatment where warm medicated oil is gently poured into the ear canal to nourish nerves, strengthen auditory bones, and relieve conditions like tinnitus, vertigo, and migraines. This therapy also addresses TMJ disorders and neck stiffness through connected meridians.",
+    "pricing": "₹500/session | 5-session course: ₹2,250",
+    "heroImage": "https://sunayurveda.co.in/wp-content/uploads/2319877.jpg",
+    "duration": "15 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Karna Pooran?",
+      "idealFor": [
+        "Tinnitus or mild hearing loss",
+        "Earwax buildup",
+        "Vertigo/BPPV (Benign Paroxysmal Positional Vertigo)",
+        "TMJ dysfunction/jaw pain",
+        "Chronic ear infections",
+        "Stress-related headaches"
+      ],
+      "notRecommendedFor": [
+        "Perforated eardrum",
+        "Active ear discharge",
+        "Recent ear surgery",
+        "Acute earache (without diagnosis)"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-ear-listen",
+        "title": "Bone Strengthening",
+        "detail": "Herbal oils like Dashamoola Taila nourish delicate ossicles (ear bones) to prevent degeneration."
+      },
+      {
+        "icon": "fas fa-brain",
+        "title": "Vagus Nerve Stimulation",
+        "detail": "Ear canal manipulation activates the vagus nerve, reducing stress and inflammation."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Auditory Benefits",
+        "icon": "fas fa-deaf",
+        "items": [
+          "Improves conductive hearing",
+          "Reduces earwax dryness",
+          "Prevents age-related hearing loss",
+          "Soothes tinnitus (ringing)"
+        ]
+      },
+      {
+        "category": "Neurological Benefits",
+        "icon": "fas fa-head-side-virus",
+        "items": [
+          "Alleviates migraines (via auricular points)",
+          "Balances inner ear fluids (vertigo relief)",
+          "Relieves jaw tension",
+          "Calms anxiety (vagus nerve activation)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Ear Inspection", "description": "Therapist checks for blockages/infections with an otoscope." },
+      { "title": "Lobe Massage", "description": "Gentle kneading with warm oil to relax auricular muscles." },
+      { "title": "Oil Pouring", "description": "Lukewarm medicated oil is poured into one ear while tilting the head (5 mins per ear)." },
+      { "title": "Drainage & Cleanup", "description": "Oil is drained; excess wiped with cotton swabs dipped in herbal steam." }
+    ],
+    "aftercare": [
+      "Avoid water entry for 4 hours",
+      "Sleep on the opposite side post-therapy",
+      "Practice ear-friendly yoga (e.g., Simhasana)",
+      "Follow with Nasya for sinus conditions"
+    ],
+    "testimonials": [
+      {
+        "name": "Ananya R.",
+        "image": "https://randomuser.me/api/portraits/women/36.jpg",
+        "feedback": "My tinnitus volume dropped by 70% after 4 sessions. I can sleep peacefully now!",
+        "rating": 5
+      },
+      {
+        "name": "Rohit K.",
+        "image": "https://randomuser.me/api/portraits/men/29.jpg",
+        "feedback": "As a musician, my left-ear hearing clarity improved noticeably. Lifesaver!",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { "question": "Is oil suctioned out?", "answer": "No—it drains naturally. Residual oil absorbs into tissues over hours." },
+      { "question": "Can children undergo this?", "answer": "Yes, with pediatric-safe oils and reduced dosage (ages 5+)." },
+      { "question": "Why does it help TMJ?", "answer": "Ear canals share nerve pathways with jaw muscles (trigeminal nerve)." },
+      { "question": "How often for chronic issues?", "answer": "Weekly for 1 month, then biweekly. Maintenance: monthly." }
+    ],
+    "cta": {
+      "heading": "Restore Clarity to Your Senses",
+      "subheading": "Book Karna Pooran for ear or neurological wellness"
+    }
+  },
+
+
+  {
+    "slug": "leech-therapy",
+    "title": "Leech Therapy",
+    "subtitle": "Bio-Detoxification for Chronic Conditions",
+    "description": "An ancient Ayurvedic blood purification technique where medicinal leeches are applied to strategic points to remove impure blood, reduce inflammation, and stimulate healing. Particularly effective for vascular disorders, autoimmune conditions, and stubborn wounds through bioactive enzymes.",
+    "pricing": "₹2,500/session | 3-session package: ₹6,750",
+    "heroImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "120 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Leech Therapy?",
+      "idealFor": [
+        "Varicose veins & venous ulcers",
+        "Psoriasis/eczema (skin diseases)",
+        "Diabetic foot ulcers",
+        "Osteoarthritis & rheumatoid pain",
+        "Cervical spondylitis",
+        "Sciatica & neural inflammation"
+      ],
+      "notRecommendedFor": [
+        "Anemia or low hemoglobin",
+        "Blood clotting disorders",
+        "Pregnancy",
+        "Immunosuppressed patients",
+        "Those on blood thinners"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-vial",
+        "title": "Bio-Enzyme Infusion",
+        "detail": "Leech saliva contains hirudin (anticoagulant) and hyaluronidase (anti-inflammatory) for targeted healing."
+      },
+      {
+        "icon": "fas fa-recycle",
+        "title": "Microcirculation Boost",
+        "detail": "Creates controlled micro-bleeding to oxygenate stagnant tissues and dissolve fibrotic deposits."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Therapeutic Benefits",
+        "icon": "fas fa-heartbeat",
+        "items": [
+          "Accelerates ulcer healing (diabetic/gangrenous)",
+          "Reduces joint swelling in arthritis",
+          "Dissolves thrombotic plaques in veins",
+          "Alleviates sciatic nerve compression"
+        ]
+      },
+      {
+        "category": "Dermatological Benefits",
+        "icon": "fas fa-allergies",
+        "items": [
+          "Clears psoriatic plaques",
+          "Reduces eczema flare-ups",
+          "Minimizes scar tissue formation",
+          "Detoxifies blood (raktamokshana)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Site Selection", "description": "Therapist identifies venous congestion points or trigger areas (e.g., knees for OA, spine for spondylitis)." },
+      { "title": "Skin Preparation", "description": "Area cleaned with herbal antiseptic; small incision made if needed for deep congestion." },
+      { "title": "Leech Application", "description": "Sterile medicinal leeches applied to extract impure blood (30-90 mins)." },
+      { "title": "Post-Extraction Care", "description": "Leeches removed; wound dressed with turmeric/neem paste to prevent infection." }
+    ],
+    "aftercare": [
+      "Avoid wetting site for 48 hours",
+      "Apply medicated honey dressings daily",
+      "Increase iron-rich foods (dates, spinach)",
+      "No strenuous activity for 3 days"
+    ],
+    "testimonials": [
+      {
+        "name": "Harish Patel",
+        "image": "https://randomuser.me/api/portraits/men/52.jpg",
+        "feedback": "After 2 sessions, my diabetic foot ulcer finally started healing after 6 months of antibiotics failed!",
+        "rating": 5
+      },
+      {
+        "name": "Meena Desai",
+        "image": "https://randomuser.me/api/portraits/women/37.jpg",
+        "feedback": "My psoriasis coverage reduced by 70% in 4 weeks. Better than steroid creams!",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { "question": "Is it safe?", "answer": "We use lab-bred disease-free leeches. Single-use protocol eliminates infection risk." },
+      { "question": "Does it hurt?", "answer": "Minor pinch during attachment. Leech saliva contains natural anesthetics." },
+      { "question": "How many leeches per session?", "answer": "2-8 depending on condition. Typically 4 for joints, 2 for ulcers." },
+      { "question": "When to repeat?", "answer": "Weekly for acute cases (ulcers), monthly for chronic (arthritis)." }
+    ],
+    "cta": {
+      "heading": "Harness Nature’s Healing Intelligence",
+      "subheading": "Schedule your Leech Therapy consultation"
+    }
+  },
+
+
+  {
+    "slug": "local-basti",
+    "title": "Local Basti",
+    "subtitle": "Medicated Reservoir Therapy for Joint Health",
+    "description": "A specialized Ayurvedic treatment where warm medicated oils/decoctions are pooled in a dough reservoir over affected joints to reduce inflammation, dissolve stiffness, and promote tissue regeneration. Combines deep heat penetration with herbal actives for musculoskeletal conditions.",
+    "pricing": "₹2,000/session | 5-session package: ₹9,000",
+    "heroImage": "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "60 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Local Basti?",
+      "idealFor": [
+        "Osteoarthritis (knee/hip/hands)",
+        "Cervical/lumbar spondylitis",
+        "Frozen shoulder",
+        "Sports injuries (ligament tears)",
+        "Rheumatoid arthritis (remission phase)",
+        "Post-fracture stiffness"
+      ],
+      "notRecommendedFor": [
+        "Open wounds near treatment site",
+        "Skin infections/allergies",
+        "Acute inflammation/swelling",
+        "Fever or systemic infections",
+        "Bleeding disorders"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-hand-holding-water",
+        "title": "Deep Penetration",
+        "detail": "Herbal compounds like Dashamoola Kwatha penetrate synovial fluid to repair cartilage."
+      },
+      {
+        "icon": "fas fa-fire",
+        "title": "Heat Synergy",
+        "detail": "Sustained warmth enhances bioavailability of anti-inflammatory herbs like Nirgundi."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Joint Benefits",
+        "icon": "fas fa-bone",
+        "items": [
+          "Reduces synovial inflammation",
+          "Restores range of motion",
+          "Lubricates articular surfaces",
+          "Dissolves calcific deposits"
+        ]
+      },
+      {
+        "category": "Muscular Benefits",
+        "icon": "fas fa-dumbbell",
+        "items": [
+          "Relieves muscle spasms",
+          "Breaks fascial adhesions",
+          "Improves tendon elasticity",
+          "Enhances proprioception"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Dough Reservoir Creation", "description": "Black gram dough ring built around affected joint (e.g., knee or neck)." },
+      { "title": "Medicated Oil Pouring", "description": "Warm herbal oil (e.g., Mahanarayana Taila) is pooled inside reservoir (15-20 mins)." },
+      { "title": "Therapeutic Abhyanga", "description": "Joint-specific massage with medicated oils after reservoir removal (20 mins)." },
+      { "title": "Herbal Poultice Wrap", "description": "Optional warm Bandhana with Nirgundi leaves to lock in benefits (10 mins)." }
+    ],
+    "aftercare": [
+      "Avoid cold exposure for 24 hours",
+      "Perform gentle joint movements",
+      "Apply medicated oil daily at home",
+      "Stay hydrated with ginger-cumin tea"
+    ],
+    "testimonials": [
+      {
+        "name": "Vijay M.",
+        "image": "https://randomuser.me/api/portraits/men/65.jpg",
+        "feedback": "After 3 sessions, my knee stiffness reduced by 80%—I climbed stairs pain-free for the first time in years!",
+        "rating": 5
+      },
+      {
+        "name": "Sunita R.",
+        "image": "https://randomuser.me/api/portraits/women/74.jpg",
+        "feedback": "My frozen shoulder regained 90% mobility without surgery. The warmth alone was heavenly.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "How many sessions are needed?", "answer": "Acute pain: 5-7 sessions; Chronic conditions: 14+ sessions with breaks." },
+      { "question": "Is it messy?", "answer": "Dough reservoir contains oil effectively. Minimal spillage occurs." },
+      { "question": "Can I combine with other therapies?", "answer": "Ideal with Pinda Sweda (herbal bolus massage) or Yoga for synergistic effects." },
+      { "question": "Why black gram dough?", "answer": "Its adhesive properties create a leak-proof seal while radiating therapeutic heat." }
+    ],
+    "cta": {
+      "heading": "Reclaim Your Joint Mobility",
+      "subheading": "Book Local Basti for targeted pain relief"
+    }
+  },
+
+
+  {
+    "slug": "hridaya-basti",
+    "title": "Hridaya Basti",
+    "subtitle": "Cardiac & Respiratory Rejuvenation Therapy",
+    "description": "A specialized Ayurvedic treatment where warm medicated oils are pooled over the heart region in a dough reservoir to strengthen cardiac muscles, regulate blood pressure, and improve respiratory function. This therapy nourishes the vital seat of Prana (life force) through targeted herbal penetration.",
+    "pricing": "₹1,300/session | 7-session course: ₹8,400",
+    "heroImage": "https://images.unsplash.com/photo-1581595219319-5b0d5b68c2c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "40 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Hridaya Basti?",
+      "idealFor": [
+        "Hypertension (mild-moderate)",
+        "Cardiac neurosis (palpitations/anxiety)",
+        "Chronic bronchitis",
+        "Exercise-induced asthma",
+        "Post-COVID cardiac fatigue",
+        "Stress-related chest tightness"
+      ],
+      "notRecommendedFor": [
+        "Severe arrhythmia",
+        "Recent cardiac surgery",
+        "Pericardial effusion",
+        "Unstable angina",
+        "Pacemaker implants"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-heartbeat",
+        "title": "Myocardial Nourishment",
+        "detail": "Oils like Hridayarnava Taila penetrate intercostal spaces to enhance coronary circulation."
+      },
+      {
+        "icon": "fas fa-lungs",
+        "title": "Bronchial Relaxation",
+        "detail": "Warmth and herbs like Vasa relax bronchioles, reducing wheezing and dyspnea."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Cardiac Benefits",
+        "icon": "fas fa-heart",
+        "items": [
+          "Regulates systolic/diastolic pressure",
+          "Reduces palpitations",
+          "Improves ejection fraction",
+          "Strengthens cardiac muscle tone"
+        ]
+      },
+      {
+        "category": "Respiratory Benefits",
+        "icon": "fas fa-wind",
+        "items": [
+          "Decreases bronchospasms",
+          "Thins mucus secretions",
+          "Enhances oxygen diffusion",
+          "Reduces steroid dependency in asthma"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Thoracic Assessment", "description": "Therapist checks pulse (Nadi Pariksha) and listens to heart/lung sounds." },
+      { "title": "Dough Reservoir Placement", "description": "Black gram dough ring built over sternum (heart region)." },
+      { "title": "Medicated Oil Retention", "description": "Warm cardiotonic oil (e.g., Arjuna Kwatha + Ghee) poured into reservoir (15 mins)." },
+      { "title": "Gentle Abhyanga", "description": "Light chest massage with Dasamoola oil to enhance absorption (10 mins)." }
+    ],
+    "aftercare": [
+      "Avoid cold showers for 6 hours",
+      "Practice Anulom Vilom pranayama",
+      "Consume cardiotonic decoctions (Arjuna tea)",
+      "No heavy exertion for 12 hours"
+    ],
+    "testimonials": [
+      {
+        "name": "Dr. Anil Mehta",
+        "image": "https://randomuser.me/api/portraits/men/41.jpg",
+        "feedback": "As a cardiologist, I integrate Hridaya Basti for stress-induced hypertension. Patients report 15-20 mmHg drops!",
+        "rating": 5
+      },
+      {
+        "name": "Sarika Reddy",
+        "image": "https://randomuser.me/api/portraits/women/19.jpg",
+        "feedback": "After 5 sessions, my asthma inhaler use halved. The warmth eased my chronic chest tightness.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Is it safe for stent patients?", "answer": "Only after 6 months post-surgery, with cardiologist approval. Avoid during anticoagulant therapy." },
+      { "question": "Can it replace BP medication?", "answer": "No—it complements allopathy. Many reduce dosage under medical supervision." },
+      { "question": "Why sternum placement?", "answer": "Overlies thymus gland (immune regulator) and cardiac plexus nerves." },
+      { "question": "How soon for results?", "answer": "Immediate calmness; BP regulation takes 2-3 weeks with weekly sessions." }
+    ],
+    "cta": {
+      "heading": "Nourish Your Lifeforce Center",
+      "subheading": "Begin your Hridaya Basti journey for holistic heart-lung health"
+    }
+  },
+
+
+  {
+    "slug": "manya-basti",
+    "title": "Manya Basti",
+    "subtitle": "Cervical Spine Rejuvenation Therapy",
+    "description": "A targeted Ayurvedic treatment where warm medicated oils are pooled in a dough reservoir over the cervical spine to relieve nerve compression, dissolve muscular adhesions, and restore vertebral alignment. Particularly effective for tech-neck syndrome and degenerative cervical conditions.",
+    "pricing": "₹1,300/session | 5-session package: ₹5,850",
+    "heroImage": "https://images.unsplash.com/photo-1571019614243-c4e080e8b25b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "40 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Manya Basti?",
+      "idealFor": [
+        "Cervical spondylosis",
+        "Tech-neck (forward head posture)",
+        "Whiplash injuries",
+        "Brachial radiculopathy",
+        "Chronic tension headaches",
+        "Trapezius muscle spasms"
+      ],
+      "notRecommendedFor": [
+        "Cervical disc herniation (acute phase)",
+        "Spinal fractures",
+        "Skin infections in neck area",
+        "Uncontrolled hypertension",
+        "Vertigo (during episodes)"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-bone",
+        "title": "Vertebral Hydration",
+        "detail": "Oils like Mahamasha Taila penetrate intervertebral discs to improve hydration and elasticity."
+      },
+      {
+        "icon": "fas fa-brain",
+        "title": "Nerve Decompression",
+        "detail": "Reduces foraminal stenosis pressure on C5-C8 nerve roots through sustained heat therapy."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Structural Benefits",
+        "icon": "fas fa-spine",
+        "items": [
+          "Reduces cervical kyphosis",
+          "Improves atlas-axis alignment",
+          "Dissolves facet joint calcifications",
+          "Restores natural cervical lordosis"
+        ]
+      },
+      {
+        "category": "Neurological Benefits",
+        "icon": "fas fa-nerve",
+        "items": [
+          "Alleviates arm numbness/tingling",
+          "Relieves occipital neuralgia",
+          "Enhances vertebral artery flow",
+          "Reduces cervicogenic headaches"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Cervical Assessment", "description": "Therapist evaluates range of motion and pinpoints trigger points (C1-C7)." },
+      { "title": "Dough Reservoir Formation", "description": "Black gram dough barrier built along cervical curvature." },
+      { "title": "Medicated Oil Retention", "description": "Warm nerve-nourishing oil (e.g., Bala Taila + Eranda) retained for 20 mins." },
+      { "title": "Marma Point Stimulation", "description": "Post-drainage massage targeting Manya marma (Sthapani, Krikatika)." }
+    ],
+    "aftercare": [
+      "Avoid phone use for 1 hour post-therapy",
+      "Sleep without pillow for 3 nights",
+      "Perform cervical isometrics (neck nods/chins)",
+      "Apply warm castor oil packs at home"
+    ],
+    "testimonials": [
+      {
+        "name": "Rahul S.",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "feedback": "As a software engineer, my chronic neck pain vanished after 4 sessions. No more migraines!",
+        "rating": 5
+      },
+      {
+        "name": "Priya M.",
+        "image": "https://randomuser.me/api/portraits/women/56.jpg",
+        "feedback": "My cervical MRI showed reduced disc compression after 6 weeks of Manya Basti + yoga.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Can it replace cervical traction?", "answer": "Yes for mild-moderate cases. Combines decompression with tissue nourishment." },
+      { "question": "Why black gram dough?", "answer": "Creates airtight seal for oil retention while allowing vertebral mobility assessment." },
+      { "question": "How many sessions needed?", "answer": "Acute pain: 5-7 sessions; Chronic degeneration: 12+ sessions monthly." },
+      { "question": "Is cracking sound normal?", "answer": "Yes—indicates release of facet joint gas bubbles (like chiropractic adjustment)." }
+    ],
+    "cta": {
+      "heading": "Release Your Neck’s Hidden Tension",
+      "subheading": "Book Manya Basti for lasting cervical relief"
+    }
+  },
+
+
+  {
+    "slug": "kati-basti",
+    "title": "Kati Basti",
+    "subtitle": "Lumbar Rejuvenation Therapy for Spinal Health",
+    "description": "A specialized Ayurvedic treatment where warm medicated oils are pooled in a dough reservoir over the lumbar spine to relieve disc compression, reduce nerve inflammation, and restore sacroiliac mobility. This therapy combines deep heat penetration with herbal actives for structural and neurological repair.",
+    "pricing": "₹1,300/session | 5-session package: ₹5,850",
+    "heroImage": "https://images.unsplash.com/photo-1544367567-0f2fcb00913f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1820&q=80",
+    "duration": "40 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Kati Basti?",
+      "idealFor": [
+        "Lumbar disc herniation (mild-moderate)",
+        "Spondylosis/spondylolisthesis",
+        "Sciatica (L4-S1 nerve compression)",
+        "Sacroiliac joint dysfunction",
+        "Postpartum lower back pain",
+        "Degenerative disc disease"
+      ],
+      "notRecommendedFor": [
+        "Severe cauda equina syndrome",
+        "Spinal fractures/tumors",
+        "Active skin infections",
+        "Pregnancy (third trimester)",
+        "Acute vertebral tuberculosis"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-spine",
+        "title": "Disc Hydration",
+        "detail": "Oils like Dhanwantaram Taila penetrate annulus fibrosus to rehydrate dessicated discs."
+      },
+      {
+        "icon": "fas fa-fire",
+        "title": "Neural Decompression",
+        "detail": "Sustained heat reduces foraminal stenosis pressure on sciatic nerve roots (L4-S1)."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Structural Benefits",
+        "icon": "fas fa-bone",
+        "items": [
+          "Reduces disc bulge by 15-20% (MRI-verified)",
+          "Restores lumbar lordosis",
+          "Dissolves facet joint osteophytes",
+          "Improves sacroiliac mobility"
+        ]
+      },
+      {
+        "category": "Neurological Benefits",
+        "icon": "fas fa-brain",
+        "items": [
+          "Alleviates leg numbness/tingling",
+          "Reduces sciatic nerve inflammation",
+          "Enhances cerebrospinal fluid flow",
+          "Decreases dependency on NSAIDs"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Lumbar Assessment", "description": "Therapist evaluates SLR test, reflexes, and palpates spinous processes (L1-S1)." },
+      { "title": "Dough Reservoir Formation", "description": "Black gram dough barrier built over lumbar curve (L3-L5 focus area)." },
+      { "title": "Medicated Oil Retention", "description": "Warm neuroprotective oil (e.g., Ksheerabala + Guggulu) retained for 25 mins." },
+      { "title": "Marma Abhyanga", "description": "Post-drainage massage targeting Kukundara and Nitamba marma points." }
+    ],
+    "aftercare": [
+      "Avoid sitting >30 mins continuously for 3 days",
+      "Sleep in fetal position with pillow between knees",
+      "Perform McKenzie extension exercises",
+      "Apply sesame oil with camphor at home"
+    ],
+    "testimonials": [
+      {
+        "name": "Arjun P.",
+        "image": "https://randomuser.me/api/portraits/men/45.jpg",
+        "feedback": "My L4-L5 disc herniation reduced from 6mm to 3mm after 8 sessions - avoided surgery!",
+        "rating": 5
+      },
+      {
+        "name": "Neha R.",
+        "image": "https://randomuser.me/api/portraits/women/63.jpg",
+        "feedback": "Chronic sciatica pain gone in 5 sessions. Now I can drive without leg cramps.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Can it replace epidural injections?", "answer": "For mild-moderate cases, yes. Combines decompression with tissue regeneration." },
+      { "question": "Why focus on L3-L5?", "answer": "90% of disc pathologies occur here. Oil penetrates 2.5cm to reach nucleus pulposus." },
+      { "question": "Is heat dangerous for discs?", "answer": "40°C therapeutic heat enhances nutrient diffusion without damaging tissues." },
+      { "question": "How soon for results?", "answer": "Acute pain relief in 1-3 sessions; structural changes need 8+ sessions." }
+    ],
+    "cta": {
+      "heading": "Reclaim Your Spinal Freedom",
+      "subheading": "Begin your Kati Basti journey today"
+    }
+  },
+
+  
+  {
+    "slug": "merudand-basti",
+    "title": "Merudand Basti",
+    "subtitle": "Complete Spinal Hydrotherapy",
+    "description": "A comprehensive Ayurvedic treatment where warm medicated oils are channeled along the entire spinal column in a specially designed trough to nourish vertebrae, decompress nerves, and correct postural misalignments. This therapy combines sustained heat with neuroprotective herbs for structural and functional spinal restoration.",
+    "pricing": "₹1,600/session | 7-session course: ₹10,080",
+    "heroImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "50 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Merudand Basti?",
+      "idealFor": [
+        "Degenerative disc disease (C1-S1)",
+        "Osteoporosis with vertebral compression",
+        "Scoliosis (mild-moderate <30°)",
+        "Spinal stenosis",
+        "Ankylosing spondylitis",
+        "Post-spinal surgery rehabilitation"
+      ],
+      "notRecommendedFor": [
+        "Spinal fractures (acute phase)",
+        "Severe osteoporosis (T-score <-3.5)",
+        "Spinal tumors/metastasis",
+        "Open spinal wounds",
+        "Advanced arachnoiditis"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-spine",
+        "title": "Axial Decompression",
+        "detail": "Creates hydraulic pressure gradient to relieve nerve root impingement in foraminal stenosis."
+      },
+      {
+        "icon": "fas fa-seedling",
+        "title": "Osteoblastic Activation",
+        "detail": "Herbs like Laksha (Laccifer lacca) stimulate bone mineral density in osteoporotic vertebrae."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Structural Benefits",
+        "icon": "fas fa-bone",
+        "items": [
+          "Reduces Cobb angle in scoliosis by 5-8°",
+          "Improves vertebral trabecular density",
+          "Restores intervertebral space height",
+          "Corrects compensatory curvatures"
+        ]
+      },
+      {
+        "category": "Neurological Benefits",
+        "icon": "fas fa-brain",
+        "items": [
+          "Alleviates neurogenic claudication",
+          "Enhances proprioception",
+          "Regulates autonomic dysfunction",
+          "Reduces spinal cord ischemia"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Spinal Assessment", "description": "Therapist evaluates posture, range of motion, and neurological deficits." },
+      { "title": "Trough Placement", "description": "Custom silicone/rubber channel secured along spinal column from C7 to S1." },
+      { "title": "Oil Hydrotherapy", "description": "Warm oil blend (e.g., Ashwagandha+Bala Taila) circulated for 30 mins at 38-40°C." },
+      { "title": "Marma Stimulation", "description": "Post-drainage acupressure on Sushumna marma points (Manibandha, Kati, etc.)." }
+    ],
+    "aftercare": [
+      "Avoid forward bending for 48 hours",
+      "Sleep on orthopedic mattress in supine position",
+      "Perform Schroth exercises for scoliosis",
+      "Consume calcium-rich Ayurvedic formulas (Praval pishti)"
+    ],
+    "testimonials": [
+      {
+        "name": "Dr. Meera Krishnan",
+        "image": "https://randomuser.me/api/portraits/women/42.jpg",
+        "feedback": "My osteoporotic patients show 7-9% BMD improvement after 3 courses. Safer than bisphosphonates!",
+        "rating": 5
+      },
+      {
+        "name": "Rahul V.",
+        "image": "https://randomuser.me/api/portraits/men/38.jpg",
+        "feedback": "32° scoliosis reduced to 26° in 6 months with Basti+Yoga. No more back braces!",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { "question": "How does it differ from Kati Basti?", "answer": "Treats entire spine (not just lumbar) using circulating oil for uniform penetration." },
+      { "question": "Can it replace spinal fusion?", "answer": "No, but may delay surgery for mild-moderate stenosis/scoliosis cases." },
+      { "question": "Why silicone trough?", "answer": "Maintains consistent oil temperature and prevents leakage during movement." },
+      { "question": "Is imaging required?", "answer": "Mandatory X-ray/MRI before therapy to rule out contraindications." }
+    ],
+    "cta": {
+      "heading": "Rebuild Your Spinal Foundation",
+      "subheading": "Schedule Merudand Basti for holistic vertebral health"
+    }
+  },
+
+
+  {
+    "slug": "virechana",
+    "title": "Virechana",
+    "subtitle": "Pitta-Dosha Purification Therapy",
+    "description": "A controlled medicated purgation process that eliminates excess Pitta and metabolic toxins (ama) from the liver, gallbladder, and small intestine. This cornerstone Panchakarma treatment uses herbal laxatives to detoxify at cellular level while balancing Agni (digestive fire).",
+    "pricing": "₹7,000/session",
+    "heroImage": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "7-8 days (3-day prep + 1-day purgation + 3-day recovery)",
+    "suitability": {
+      "heading": "Who Should Consider Virechana?",
+      "idealFor": [
+        "Chronic liver disorders (jaundice, fatty liver)",
+        "Type 2 diabetes (Prameha)",
+        "Inflammatory bowel disease",
+        "Hyperacidity/GERD",
+        "Psoriasis/eczema",
+        "Migraine (Pitta-type)"
+      ],
+      "notRecommendedFor": [
+        "Ulcerative colitis (active bleeding)",
+        "Severe hemorrhoids (grade IV)",
+        "Pregnancy",
+        "Advanced cirrhosis",
+        "Electrolyte imbalances"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-leaf",
+        "title": "Hepatobiliary Flush",
+        "detail": "Herbs like Trivrit (Operculina turpethum) stimulate bile duct contraction to expel gallstones/sludge."
+      },
+      {
+        "icon": "fas fa-fire-extinguisher",
+        "title": "Acidity Regulation",
+        "detail": "Neutralizes excess hydrochloric acid while preserving intrinsic factor for B12 absorption."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Metabolic Benefits",
+        "icon": "fas fa-heartbeat",
+        "items": [
+          "Reduces HbA1c by 1-2% in diabetics",
+          "Lowers LDL cholesterol",
+          "Dissolves uric acid crystals (gout)",
+          "Improves liver enzyme levels"
+        ]
+      },
+      {
+        "category": "Systemic Benefits",
+        "icon": "fas fa-lungs",
+        "items": [
+          "Alleviates allergic asthma",
+          "Resolves chronic conjunctivitis",
+          "Reduces splenomegaly",
+          "Normalizes urine pH (dysuria)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Snehana (Oleation)", "description": "3-day internal ghee consumption to loosen toxins (starts with 30ml, increases to 120ml)." },
+      { "title": "Swedana (Sudation)", "description": "Daily herbal steam to mobilize toxins toward GI tract." },
+      { "title": "Purgation Day", "description": "Administer Trivrit+Eranda decoction; 15-25 bowel movements expected." },
+      { "title": "Samsarjana (Diet)", "description": "3-day graded food reintroduction (mung soup → rice → normal diet)." }
+    ],
+    "aftercare": [
+      "Avoid sour/spicy foods for 21 days",
+      "Daily consumption of Guduchi+Amalaki juice",
+      "Practice Agnisara Kriya (abdominal exercises)",
+      "Follow lunar cycle (ideal during full moon)"
+    ],
+    "testimonials": [
+      {
+        "name": "Dr. Anjali Rao",
+        "image": "https://randomuser.me/api/portraits/women/51.jpg",
+        "feedback": "My fatty liver patients show 30% reduction in hepatic steatosis post-Virechana - verified by FibroScan!",
+        "rating": 5
+      },
+      {
+        "name": "Rajat M.",
+        "image": "https://randomuser.me/api/portraits/men/66.jpg",
+        "feedback": "After 10 years of psoriasis, 70% skin clearance in 2 months post-therapy. No more steroid creams!",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "How many bowel movements are normal?", "answer": "15-25 over 8 hours. Ends when bile turns yellow (indicating Pitta clearance)." },
+      { "question": "Can it cause dehydration?", "answer": "Monitored closely with electrolyte drinks (cumin+coriander+rock salt water)." },
+      { "question": "Why ghee before purgation?", "answer": "Lipid-soluble toxins bind to ghee for effective elimination." },
+      { "question": "How often to repeat?", "answer": "Annual maintenance for chronic conditions; biannual for severe ama." }
+    ],
+    "cta": {
+      "heading": "Purge the Root of Disease",
+      "subheading": "Begin your Virechana under expert supervision"
+    }
+  },
+
+
+  {
+    "slug": "takradhara",
+    "title": "Takradhara",
+    "subtitle": "Cooling Buttermilk Therapy for Mind & Scalp",
+    "description": "A soothing Ayurvedic treatment where continuously flowing medicated buttermilk is poured over the forehead in rhythmic streams to calm the nervous system, treat scalp disorders, and balance Pitta dosha. The probiotics and herbs in the buttermilk provide deep nourishment to hair roots and mental faculties.",
+    "pricing": "₹2,000/session | 7-session package: ₹12,600",
+    "heroImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "60 minutes",
+    "suitability": {
+      "heading": "Who Should Consider Takradhara?",
+      "idealFor": [
+        "Chronic stress/anxiety",
+        "Scalp psoriasis/seborrhea",
+        "Pitta-aggravated conditions",
+        "Insomnia with excess body heat",
+        "Early-stage hair thinning",
+        "Fungal scalp infections"
+      ],
+      "notRecommendedFor": [
+        "Severe sinusitis",
+        "Open wounds on scalp",
+        "Hypothyroidism",
+        "Vata-dominant individuals",
+        "During acute fever"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-brain",
+        "title": "Neuro-Cooling",
+        "detail": "Lactic acid and probiotics in buttermilk lower hypothalamic temperature, reducing stress hormone production."
+      },
+      {
+        "icon": "fas fa-seedling",
+        "title": "Mycotic Control",
+        "detail": "Herbs like Neem and Karanja in the blend exhibit potent antifungal action against Malassezia yeasts."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Dermatological Benefits",
+        "icon": "fas fa-allergies",
+        "items": [
+          "Eliminates scalp itching/flaking",
+          "Reduces follicular inflammation",
+          "Balances sebum production",
+          "Treats tinea capitis (ringworm)"
+        ]
+      },
+      {
+        "category": "Neurological Benefits",
+        "icon": "fas fa-cloud-moon",
+        "items": [
+          "Increases alpha brain waves (relaxation)",
+          "Lowers cortisol by 28% (studied)",
+          "Improves sleep onset latency",
+          "Relieves tension headaches"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Dosha Assessment", "description": "Therapist selects buttermilk base (sweet/sour) and herbal additives." },
+      { "title": "Shiro Abhyanga", "description": "10-min scalp massage with coconut+neem oil to open channels." },
+      { "title": "Takradhara Flow", "description": "Continuous buttermilk stream (25-30°C) poured from 6' height for 40 mins." },
+      { "title": "Post-Dhara Rest", "description": "10-min supine rest with herbal eye pads (Triphala infusion)." }
+    ],
+    "aftercare": [
+      "Avoid hair wash for 8 hours",
+      "Consume cooling foods (coconut, cucumber)",
+      "Practice Sheetali pranayama",
+      "Repeat weekly during summer/Pitta season"
+    ],
+    "testimonials": [
+      {
+        "name": "Ananya K.",
+        "image": "https://randomuser.me/api/portraits/women/43.jpg",
+        "feedback": "My decade-long dandruff vanished in 3 sessions. Now I use this instead of ketoconazole!",
+        "rating": 5
+      },
+      {
+        "name": "Rohit M.",
+        "image": "https://randomuser.me/api/portraits/men/22.jpg",
+        "feedback": "As a trader, this therapy saved me from burnout. My focus improved dramatically.",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "Why buttermilk instead of oil?", "answer": "Fermented dairy has superior Pitta-pacifying and probiotic benefits for scalp microbiome." },
+      { "question": "Is dripping on face safe?", "answer": "Eyes/nose are protected with cotton pads. Buttermilk is non-irritating if accidentally contacted." },
+      { "question": "Can it lighten hair?", "answer": "No—unlike harsh antifungals, it preserves melanin while treating infections." },
+      { "question": "How to prepare medicated takra?", "answer": "Base is 1:4 yogurt:water, fermented 12hrs with herbs like Brahmi/Guduchi." }
+    ],
+    "cta": {
+      "heading": "Cool Your Mind, Heal Your Scalp",
+      "subheading": "Experience Takradhara's dual therapeutic power"
+    }
+  },
+
+
+  {
+    "slug": "navara-kizhi",
+    "title": "Shashtik Shali Pinda Sweda",
+    "subtitle": "Medicated Rice Bolus Therapy for Neuromuscular Repair",
+    "description": "A specialized Ayurvedic fomentation therapy where warm boluses of medicinal Navara rice cooked with herbal decoctions and milk are rhythmically massaged over the body. This treatment deeply nourishes tissues, stimulates nerve regeneration, and repairs musculoskeletal damage through thermotherapy and phytochemical penetration.",
+    "pricing": "₹2,400/session | 7-session package: ₹15,120",
+    "heroImage": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "60 minutes (40 mins massage + 20 mins steam)",
+    "suitability": {
+      "heading": "Who Should Consider Navara Kizhi?",
+      "idealFor": [
+        "Hemiplegia/paraplegia",
+        "Rheumatoid arthritis",
+        "Muscular atrophy",
+        "Cervical/lumbar radiculopathy",
+        "Fibromyalgia",
+        "Post-stroke rehabilitation"
+      ],
+      "notRecommendedFor": [
+        "Skin infections/open wounds",
+        "Severe osteoporosis",
+        "Uncontrolled hypertension",
+        "Acute inflammation",
+        "Varicose veins"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-seedling",
+        "title": "Tissue Regeneration",
+        "detail": "Navara rice peptides stimulate IGF-1 production for muscle fiber repair."
+      },
+      {
+        "icon": "fas fa-brain",
+        "title": "Neural Reprogramming",
+        "detail": "Combination of heat+pressure reactivates dormant motor neurons in paralysis."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Musculoskeletal Benefits",
+        "icon": "fas fa-bone",
+        "items": [
+          "Reduces CPK levels in muscular dystrophy",
+          "Improves joint range of motion by 40-60%",
+          "Restores synovial fluid viscosity",
+          "Dissolves fascial adhesions"
+        ]
+      },
+      {
+        "category": "Neurological Benefits",
+        "icon": "fas fa-brain",
+        "items": [
+          "Enhances nerve conduction velocity",
+          "Reduces neuropathic pain (DN4 scale improvement)",
+          "Stimulates proprioception",
+          "Regulates sleep architecture (increases REM)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Rice Preparation", "description": "Navara rice cooked in Bala/Guduchi decoction + goat milk until semi-solid." },
+      { "title": "Pottali Making", "description": "Warm rice-herb mix tied in muslin cloth bundles (4-6 boluses per session)." },
+      { "title": "Therapeutic Application", "description": "Bolus massage along muscle fibers and meridians (38-42°C)." },
+      { "title": "Swedana (Steam)", "description": "Herbal steam to enhance phytochemical absorption (optional)." }
+    ],
+    "aftercare": [
+      "Consume protein-rich diet (mung, sesame)",
+      "Avoid cold exposure for 24 hours",
+      "Perform passive/active ROM exercises",
+      "Apply Mahanarayana oil daily"
+    ],
+    "testimonials": [
+      {
+        "name": "Dr. Priya Nair",
+        "image": "https://randomuser.me/api/portraits/women/33.jpg",
+        "feedback": "My MS patient regained 30% leg mobility after 14 sessions - something PT couldn't achieve in 2 years!",
+        "rating": 5
+      },
+      {
+        "name": "Vikram S.",
+        "image": "https://randomuser.me/api/portraits/men/58.jpg",
+        "feedback": "From wheelchair to walking stick in 3 months. This therapy rebuilt my atrophied muscles.",
+        "rating": 4
+      }
+    ],
+    "faqs": [
+      { "question": "Why Navara rice specifically?", "answer": "Its unique polypeptides have 3x higher bioavailability than regular rice for tissue repair." },
+      { "question": "Is it painful?", "answer": "Therapeutic warmth (max 42°C) is soothing. Pressure adjusted for comfort." },
+      { "question": "How differs from Pizhichil?", "answer": "Deeper tissue penetration via grain texture vs oil's superficial action." },
+      { "question": "When to expect results?", "answer": "Pain relief in 3-5 sessions; neurological improvements need 14+ sessions." }
+    ],
+    "cta": {
+      "heading": "Reactivate Your Neuromuscular Potential",
+      "subheading": "Begin your Navara Kizhi rehabilitation journey"
+    }
+  },
+
+
+  {
+    "slug": "pizhichil",
+    "title": "Pizhichil (Thailadhara)",
+    "subtitle": "Royal Oil Bath for Deep Rejuvenation",
+    "description": "A luxurious Ayurvedic therapy where continuous streams of warm medicated oil are poured over the body while synchronized massage enhances absorption. This 'oil waterfall' treatment detoxifies at cellular level, lubricates joints, and revitalizes the nervous system through sustained heat and herbal synergy.",
+    "pricing": "₹2,400/session | 7-session package: ₹15,120",
+    "heroImage": "https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    "duration": "60 minutes (40 mins oil flow + 20 mins massage)",
+    "suitability": {
+      "heading": "Who Should Consider Pizhichil?",
+      "idealFor": [
+        "Degenerative joint diseases",
+        "Chronic fatigue syndrome",
+        "Erectile dysfunction/low libido",
+        "Hypertension (mild-moderate)",
+        "Vata/Pitta imbalance",
+        "Post-surgical recovery"
+      ],
+      "notRecommendedFor": [
+        "Acute fever/infections",
+        "Severe cardiac conditions",
+        "Open wounds/rashes",
+        "Obesity (BMI >35)",
+        "Recent chemotherapy"
+      ]
+    },
+    "features": [
+      {
+        "icon": "fas fa-oil-can",
+        "title": "Transdermal Saturation",
+        "detail": "Maintains 40-45°C oil temperature for optimal pore dilation (absorbs 300% more actives than standard massage)."
+      },
+      {
+        "icon": "fas fa-heartbeat",
+        "title": "Cardiac Toning",
+        "detail": "Sesame oil's lignans (sesamin/sesamolin) reduce arterial stiffness by 18% (Doppler-verified)."
+      }
+    ],
+    "benefits": [
+      {
+        "category": "Musculoskeletal Benefits",
+        "icon": "fas fa-bone",
+        "items": [
+          "Increases synovial fluid production",
+          "Reduces CRP levels in arthritis",
+          "Restores tendon elasticity",
+          "Dissolves fascial adhesions"
+        ]
+      },
+      {
+        "category": "Systemic Benefits",
+        "icon": "fas fa-heart",
+        "items": [
+          "Lowers systolic BP by 10-15 mmHg",
+          "Boosts testosterone (in men)/estrogen (in women)",
+          "Enhances slow-wave sleep duration",
+          "Reduces cortisol by 31% (salivary tests)"
+        ]
+      }
+    ],
+    "steps": [
+      { "title": "Oil Selection", "description": "Dosha-specific blend (e.g., Dhanwantaram for Vata, Ksheerabala for Pitta)." },
+      { "title": "Continuous Pouring", "description": "Two therapists synchronize oil streams from 12\" height using cloth pouches." },
+      { "title": "Rhythmic Massage", "description": "Long strokes follow lymphatic pathways (limbs→heart)." },
+      { "title": "Steam Therapy", "description": "Optional 10-min herbal steam to enhance detox (Nirgundi leaves)." }
+    ],
+    "aftercare": [
+      "Rest 30 mins post-therapy (oil remains on skin)",
+      "Consume warm cumin-ginger water",
+      "Avoid strenuous exercise for 24 hours",
+      "Repeat monthly for chronic conditions"
+    ],
+    "testimonials": [
+      {
+        "name": "Rajiv Menon",
+        "image": "https://randomuser.me/api/portraits/men/45.jpg",
+        "feedback": "My rheumatoid arthritis pain reduced by 70% in 5 sessions - better than biologics!",
+        "rating": 5
+      },
+      {
+        "name": "Ananya Deshpande",
+        "image": "https://randomuser.me/api/portraits/women/62.jpg",
+        "feedback": "After years of insomnia, I now sleep 6 uninterrupted hours post-Pizhichil. Life-changing!",
+        "rating": 4.5
+      }
+    ],
+    "faqs": [
+      { "question": "How differs from Abhyanga?", "answer": "Pizhichil's continuous oil flow maintains therapeutic temperature for deeper penetration." },
+      { "question": "Is it messy?", "answer": "Performed on special wooden tables with drainage; minimal oil wastage." },
+      { "question": "Why two therapists?", "answer": "Ensures uninterrupted oil flow + synchronized massage for autonomic balance." },
+      { "question": "Can it replace blood pressure meds?", "answer": "No, but may allow dosage reduction under medical supervision." }
+    ],
+    "cta": {
+      "heading": "Experience Ayurveda's Ultimate Rejuvenation",
+      "subheading": "Book your Pizhichil detox today"
+    }
+  }
+]
