@@ -75,15 +75,15 @@
                 <!-- Personal Details -->
                 <h3>Personal Details</h3>
                 <div class="col-md-6">
-                    <label>Full Name</label>
+                    <label>Full Name<span class="required">*</span></label>
                     <input type="text" name="fullName" class="form-control" required>
                 </div>
                 <div class="col-md-3">
-                    <label>Age</label>
+                    <label>Age<span class="required">*</span></label>
                     <input type="number" name="age" class="form-control" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="gender">Gender</label>
+                    <label for="gender">Gender<span class="required">*</span></label>
                     <select name="gender" id="gender" class="form-select" required>
                         <option value="" selected disabled hidden>Select Gender</option>
                         <option value="Male">Male</option>
@@ -96,7 +96,7 @@
                     <input type="date" name="dob" class="form-control">
                 </div>
                 <div class="col-md-6">
-                    <label>Phone Number</label>
+                    <label>Phone Number<span class="required">*</span></label>
                     <input type="tel" name="phone" class="form-control" required>
                 </div>
                 <div class="col-md-6">
@@ -268,11 +268,11 @@
                 <!-- Appointment Details -->
                 <h3>Appointment Date</h3>
                 <div class="col-md-3">
-                    <label>Select Appointment Date</label>
+                    <label>Select Appointment Date<span class="required">*</span></label>
                     <input type="date" name="appointmentDate" class="form-control" required>
                 </div>
                 <div class="col-md-3">
-                    <label>Select Appointment Time</label>
+                    <label>Select Appointment Time<span class="required">*</span></label>
                     <select name="appointmentTime" class="form-select" required>
                         <option value="" selected disabled hidden>Select Time</option>
                         <option value="10:00 AM">10:00 AM</option>
@@ -294,11 +294,11 @@
                     <img class="text-center" src="https://cdn.pixabay.com/photo/2023/02/28/01/51/qr-code-7819654_1280.jpg" alt="UPI QR Code" style="max-width: 250px; border-radius: 10px;">
                 </div>
                 <div class="col-md-12">
-                    <label>Upload Payment Screenshot</label>
+                    <label>Upload Payment Screenshot<span class="required">*</span></label>
                     <input type="file" name="paymentScreenshot" accept="image/*" class="form-control" required>
                 </div>
                 <div class="col-md-12">
-                    <label>After payment, enter your UPI Transaction ID below:</label>
+                    <label>After payment, enter your UPI Transaction ID below:<span class="required">*</span></label>
                     <input type="text" name="transactionId" class="form-control mb-3" placeholder="Enter UPI Transaction ID" required>
                 </div>
 
@@ -339,7 +339,7 @@
                     <h5>Our Services</h5>
                     <ul class="ayur-footer-links" style="padding: 0px;">
                         <li><a href="/services/panchakarma">Panchakarma Therapy</a></li>
-                        <li><a href="/services/abhyanga">Ayurvedic Massage</a></li>
+                        <li><a href="/services/abhyanga">Abhyanga Massage</a></li>
                         <li><a href="/services/siravedh">Siravedh (Venesection)</a></li>
                         <li><a href="/services/shiroabhyanga">Shiroabhyanga</a></li>
                         <li><a href="/services/virechana">Virechana</a></li>

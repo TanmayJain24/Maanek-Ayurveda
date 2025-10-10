@@ -290,6 +290,10 @@ img {
     outline: none;
 }
 
+.required {
+    color: var(--ayur-primary);
+}
+
 /* Youtube video Style */
 .video-card:hover {
     transform: scale(1.05);

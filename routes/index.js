@@ -3,6 +3,7 @@ var router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
+
 /* Home page. */
 router.get('/', (req, res, next) => {
   const servicesPath = path.join(__dirname, '../data/services.json');
@@ -28,6 +29,7 @@ router.get('/', (req, res, next) => {
 router.get('/about', (req, res) => {
   res.render('about', { title: 'About Us' });
 });
+
 
 /* Services */
 router.get('/services', (req, res) => {
@@ -58,10 +60,12 @@ router.get('/blogs', (req, res) => {
   });
 });
 
+
 /* Contact */
 router.get('/contact', (req, res) => {
   res.render('contact', { title: 'Contact Us' });
 });
+
 
 /* consultaion */
 router.get('/consultation', (req, res) => {

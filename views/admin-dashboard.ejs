@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/maanek_logo.webp" type="image/x-icon">
-    <title>Blogs | Maanek Ayurveda and Panchkarma Clinic</title>
+    <title>Check Booking | Maanek Ayurveda and Panchkarma Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
@@ -22,7 +22,7 @@
                 <img src="/images/maanek_logo.webp" alt="Maanek" style="height: 50px; width: 50px; margin-right: 10px;">
                 <div class="d-flex flex-column">
                   <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1;">Maanek Ayurveda and</span>
-                  <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1">Panchakarma Clinic</span>
+                  <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1;">Panchakarma Clinic</span>
                 </div>
               </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -53,56 +53,81 @@
         </div>
     </nav>
 
-    <!-- Blogs Hero -->
-    <section class="ayur-hero" data-aos="slide-down" data-aos-duration="600">
+
+    <!-- Hero Section -->
+    <section class="ayur-hero" data-aos="fade-down" data-aos-duration="600">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1>Ayurveda Insights & Wellness Blogs</h1>
-                    <p class="lead">Explore the science of life through Blogs curated by Ayurvedic experts</p>
-                </div>
+        <div class="row">
+            <div class="col-12 text-center">
+            <h1>Check Your Appointment</h1>
+            <p class="lead">Track your consultation status and booking details</p>
             </div>
+        </div>
         </div>
     </section>
 
-    <!-- Blog List Section -->
-    <section class="ayur-section">
-        <div class="container">
-            <div class="row g-4" id="blogContainer">
-                <% blogs.forEach((blog, index) => { %>
-                    <div class="col-md-6 col-lg-4 blog-card <%= index >= 9 ? 'd-none' : '' %>" >
-                        <div class="ayur-card h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="<%= 100 + index * 50 %>" data-aos-duration="500">
-                            <img src="<%= blog.image %>" alt="<%= blog.title %>" class="ayur-card-img">
-                            <div class="ayur-card-body d-flex flex-column flex-grow-1">
-                                <h4 class="ayur-card-title"><%= blog.title %></h4>
-                                <p class="ayur-card-text flex-grow-1"><%= blog.description %></p>
-                                <a href="/blogs/<%= blog.slug %>" class="ayur-btn ayur-btn-outline-dark mt-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                <% }) %>
-            </div>
 
-            <% if (blogs.length > 9) { %>
-            <div class="text-center mt-4" data-aos="zoom-in" data-aos-delay="200">
-                <button class="ayur-btn ayur-btn-outline-dark" id="loadMoreBtn">Show More Blogs</button>
-            </div>
+    <!-- Doctor Slot Management -->
+    <div class="container my-5">
+        <h2 class="mb-4">Doctor Slot Management</h2>
+      
+        <!-- Add Slot Form -->
+        <form action="/admin/add-slot" method="POST" class="row g-3 mb-4">
+          <div class="col-md-6">
+            <label for="date" class="form-label">Select Date</label>
+            <input type="date" name="date" id="date" class="form-control" required>
+          </div>
+      
+          <div class="col-md-4">
+            <label for="time" class="form-label">Select Time Slot</label>
+            <select name="time" id="time" class="form-select" required>
+              <option value="" disabled selected>Select Time</option>
+              <option value="09:00">9:00 AM - 10:00 AM</option>
+              <option value="10:00">10:00 AM - 11:00 AM</option>
+              <option value="11:00">11:00 AM - 12:00 PM</option>
+              <option value="12:00">12:00 PM - 1:00 PM</option>
+              <!-- Skipping 1 PM to 2 PM -->
+              <option value="14:00">2:00 PM - 3:00 PM</option>
+              <option value="15:00">3:00 PM - 4:00 PM</option>
+              <option value="16:00">4:00 PM - 5:00 PM</option>
+              <option value="17:00">5:00 PM - 6:00 PM</option>
+            </select>
+          </div>
+      
+          <div class="col-md-2 d-flex align-items-end">
+            <button type="submit" class="btn btn-success w-100">Add Slot</button>
+          </div>
+        </form>
+      
+        <!-- Existing Slots List -->
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Available Slots</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <% if (slots.length === 0) { %>
+              <li class="list-group-item text-muted">No slots added yet.</li>
+            <% } else { %>
+              <% slots.forEach(slot => { %>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span>
+                    <strong><%= slot.date %></strong> at 
+                    <%= new Date(`1970-01-01T${slot.time}`).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) %>
+                  </span>
+                  <form action="/admin/delete-slot" method="POST" class="d-inline">
+                    <input type="hidden" name="date" value="<%= slot.date %>">
+                    <input type="hidden" name="time" value="<%= slot.time %>">
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                  </form>
+                </li>
+              <% }) %>
             <% } %>
+          </ul>
         </div>
-    </section>
+    </div>
+            
 
-
-    <!-- CTA -->
-    <section class="ayur-section ayur-bg-secondary">
-        <div class="container text-center">
-            <h2 class="ayur-text-light" data-aos="fade-right" data-aos-duration="1000">Want personalized wellness advice?</h2>
-            <p class="lead ayur-text-light ayur-mb-lg" data-aos="fade-left" data-aos-duration="1000">Book a Consultation with our Ayurvedic doctor today.</p>
-            <a href="/contact" class="ayur-btn ayur-btn-outline-light me-3">Contact Us</a>
-            <a href="/book" class="ayur-btn ayur-btn-outline-light">Book Consultation</a>
-        </div>
-    </section>
-
-
+      
     <!-- Footer -->
     <footer class="ayur-footer">
         <div class="container">
@@ -153,23 +178,9 @@
         </div>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        if (loadMoreBtn) {
-            loadMoreBtn.addEventListener('click', () => {
-                document.querySelectorAll('.blog-card.d-none').forEach(card => card.classList.remove('d-none'));
-                loadMoreBtn.style.display = 'none';
-            });
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <script>
-        document.querySelector('i').addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = this.href;
-        });
-    </script>
 </body>
 </html>
