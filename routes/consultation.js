@@ -1,94 +1,62 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const path = require('path');
+const { v2: cloudinary } = require('cloudinary');
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const Consultation = require('../models/Consultation');
+require('dotenv').config();
 
-// Multer setup for file uploads
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/');
-  },
-  filename: function (req, file, cb) {
-    const uniqueName = Date.now() + '-' + file.originalname.replace(/\s+/g, '_');
-    cb(null, uniqueName);
+// Cloudinary config
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
+
+// Multer storage with Cloudinary
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: {
+    folder: 'paymentScreenshots',   // folder in Cloudinary
+    allowed_formats: ['jpg', 'jpeg', 'png', 'webp']
   }
 });
 
-const upload = multer({
-  storage: storage,
-  limits: { fileSize: 5 * 1024 * 1024 }, // max 5MB
-  fileFilter: function (req, file, cb) {
-    const filetypes = /jpeg|jpg|png|webp/;
-    const mimetype = filetypes.test(file.mimetype);
-    const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
-    if (mimetype && extname) return cb(null, true);
-    cb(new Error("Only .jpeg, .jpg, .png, .webp image formats allowed"));
-  }
-});
+const upload = multer({ storage });
 
-// Render form page
+// Render form
 router.get('/', (req, res) => {
   res.render('consultation');
 });
 
-
-// Handle form submission with image upload
+// Handle form submission
 router.post('/', upload.single('paymentScreenshot'), async (req, res) => {
   try {
     const { appointmentDate, appointmentTime, transactionId, diseases } = req.body;
 
-    // Prevent duplicate appointment date + time
+    // Prevent duplicate appointment
     const isBooked = await Consultation.findOne({ appointmentDate, appointmentTime });
+    if (isBooked) return res.send(`<script>alert("This appointment slot is booked."); window.location.href="/consultation";</script>`);
 
-    if (isBooked) {
-      return res.send(`
-        <script>
-            alert("Sorry, this appointment date is already booked. Please select another date or time.");
-            window.location.href = "/consultation";
-        </script>
-      `);
-    }
-
-    // Ensure transaction ID is unique
+    // Prevent duplicate transaction ID
     const existingTxn = await Consultation.findOne({ transactionId });
-    if (existingTxn) {
-      return res.send(`
-        <script>
-          alert("This transaction ID has already been used. Please enter a valid one.");
-          window.location.href = "/consultation";
-        </script>
-      `);
-    }
+    if (existingTxn) return res.send(`<script>alert("Transaction ID already used."); window.location.href="/consultation";</script>`);
 
-    // Save the form data
+    // Save to DB
     const data = new Consultation({
       ...req.body,
-      appointmentDate,
-      appointmentTime,
-      transactionId,
       diseases: Array.isArray(diseases) ? diseases : (diseases ? [diseases] : []),
-      paymentScreenshot: req.file ? req.file.filename : null
+      paymentScreenshot: req.file ? req.file.path : null // Cloudinary URL
     });
 
     await data.save();
 
-    res.send(`
-      <script>
-        alert("Thank you! Your consultation has been submitted successfully.");
-        window.location.href = "/";
-      </script>
-    `);
+    res.send(`<script>alert("Consultation submitted successfully!"); window.location.href="/";</script>`);
+
   } catch (err) {
     console.error(err);
-    res.status(500).send(`
-      <script>
-        alert("Something went wrong. Please try again later.");
-        window.location.href = "/";
-      </script>
-    `);
+    res.status(500).send(`<script>alert("Something went wrong."); window.location.href="/";</script>`);
   }
 });
-
 
 module.exports = router;
