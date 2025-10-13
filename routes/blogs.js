@@ -1,48 +1,41 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const path = require('path');
-const fs = require('fs');
-
+const Blog = require("../models/blog");
 let marked;
-import('marked').then(m => {
+
+// import markdown renderer
+import("marked").then(m => {
   marked = m.marked;
 });
 
-
-// Read blogs.json once at startup (or refactor to read each time if blogs are frequently updated)
-const blogsPath = path.join(__dirname, '../data/blogs.json');
-let blogs = [];
-
-// Function to load services
-function loadBlogs() {
+// Route 1: show all blogs
+router.get("/", async (req, res) => {
   try {
-    const data = fs.readFileSync(blogsPath, 'utf-8');
-    blogs = JSON.parse(data);
+    const blogs = await Blog.find().sort({ date: -1 });
+    res.render("blogs", { blogs });
   } catch (err) {
-    console.error('Failed to read blogs.json:', err.message);
-    blogs = [];
+    console.error("Error fetching blogs:", err);
+    res.status(500).render("404", { message: "Failed to load blogs." });
   }
-}
+});
 
-// Initial load
-loadBlogs();
+// Route 2: single blog by slug
+router.get("/:slug", async (req, res) => {
+  try {
+    const blog = await Blog.findOne({ slug: req.params.slug });
+    if (!blog) {
+      return res.status(404).render("404", { message: "Blog not found" });
+    }
 
-// Dynamic blog route
-router.get('/:slug', (req, res) => {
-  const blog = blogs.find(b => b.slug === req.params.slug);
-  if (!blog) {
-    return res.status(404).render('404', { message: 'Blog not found' });
+    if (!marked) {
+      return res.status(500).send("Markdown parser not ready yet");
+    }
+
+    res.render("dynamic-blog", { blog, marked, request: req });
+  } catch (err) {
+    console.error("Error fetching single blog:", err);
+    res.status(500).render("404", { message: "Error fetching blog" });
   }
-
-  if (!marked) {
-    return res.status(500).send('Markdown parser not ready yet');
-  }
-
-  res.render('dynamic-blog', {
-    blog,
-    marked,
-    request: req
-  });
 });
 
 module.exports = router;

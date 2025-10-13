@@ -16,6 +16,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "marked": "^16.0.0",
+    "mongodb": "5.5",
     "mongoose": "^8.16.1",
     "morgan": "~1.9.1",
     "multer": "^2.0.1",

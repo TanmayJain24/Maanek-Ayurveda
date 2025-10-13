@@ -18,11 +18,14 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light ayur-navbar fixed-top">
-        <div class="container"> 
-            <a class="navbar-brand ayur-nav-brand" href="#">
-                <img src="/images/maanek_logo.webp" alt="Maanek" style="height: 50px; width: 50px;">
-                <span style="color: var(--ayur-primary); padding: 0px;">Maanek Ayurveda</span>
-            </a>
+        <div class="container">
+            <a class="navbar-brand ayur-nav-brand d-flex align-items-center" href="#">
+                <img src="/images/maanek_logo.webp" alt="Maanek" style="height: 50px; width: 50px; margin-right: 10px;">
+                <div class="d-flex flex-column">
+                  <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1;">Maanek Ayurveda and</span>
+                  <span style="color: var(--ayur-primary); font-weight: 600; line-height: 1;">Panchakarma Clinic</span>
+                </div>
+              </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,6 +45,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link ayur-nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ayur-nav-link" href="/check-appointment">Check Booking</a>
                     </li>
                     <li class="nav-item ms-lg-3">
                         <a class="ayur-btn ayur-btn-outline-dark" href="/consultation">Book Consultation</a>
@@ -196,40 +202,6 @@
                 </div>
             </div>
             </div>
-        </div>
-        </div>
-    </section>
-
-    
-    <!-- Testimonials -->
-    <section class="ayur-section ayur-bg-light">
-        <div class="container">
-        <h2 class="ayur-section-title text-center">What Our Clients Say</h2>
-        <div class="row">
-            <% service.testimonials.forEach(t => { %>
-            <div class="col-md-4 ayur-mb-md" data-aos="zoom-in-up" data-aos-delay="150">
-                <div class="ayur-testimonial">
-                <div class="d-flex align-items-center ayur-mb-sm">
-                    <img src="<%= t.image %>" class="ayur-client-img me-3" />
-                    <div>
-                    <h5 class="ayur-mb-0"><%= t.name %></h5>
-                    <div class="ayur-rating">
-                        <% for (let i = 1; i <= 3; i++) { %>
-                        <% if (i <= Math.floor(t.rating)) { %>
-                            <i class="fas fa-star"></i>
-                        <% } else if (i - t.rating < 1) { %>
-                            <i class="fas fa-star-half-alt"></i>
-                        <% } else { %>
-                            <i class="far fa-star"></i>
-                        <% } %>
-                        <% } %>
-                    </div>
-                    </div>
-                </div>
-                <p>"<%= t.feedback %>"</p>
-                </div>
-            </div>
-            <% }); %>
         </div>
         </div>
     </section>

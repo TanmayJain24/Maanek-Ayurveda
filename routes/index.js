@@ -2,25 +2,19 @@ var express = require('express');
 var router = express.Router();
 const fs = require('fs');
 const path = require('path');
+const Service = require("../models/service");
+const Blog = require('../models/blog');
 
 
 /* Home page. */
-router.get('/', (req, res, next) => {
-  const servicesPath = path.join(__dirname, '../data/services.json');
-  const blogsPath = path.join(__dirname, '../data/blogs.json');
-
+router.get("/", async (req, res) => {
   try {
-    const services = JSON.parse(fs.readFileSync(servicesPath, 'utf-8'));
-    const blogs = JSON.parse(fs.readFileSync(blogsPath, 'utf-8'));
-
-    res.render('index', {
-      services,
-      blogs
-    });
-
+    const services = await Service.find().limit(6); // Show top 6 services
+    const blogs = await Blog.find().limit(6); // Show latest 6 blogs
+    res.render("index", { services, blogs });
   } catch (err) {
-    console.error('Error loading home data:', err);
-    res.status(500).send('Internal Server Error');
+    console.error("Error fetching home data:", err);
+    res.status(500).send("Internal Server Error");
   }
 });
 
@@ -32,32 +26,39 @@ router.get('/about', (req, res) => {
 
 
 /* Services */
-router.get('/services', (req, res) => {
-  const servicesPath = path.join(__dirname, '../data/services.json');
-  fs.readFile(servicesPath, 'utf-8', (err, data) => {
-    if (err) {
-      console.error('Failed to load services:', err);
-      return res.status(500).send('Internal Server Error');
-    }
+router.get("/services", async (req, res) => {
+  try {
+    const services = await Service.find();
+    res.render("services", { services });
+  } catch (err) {
+    console.error("Error loading services:", err);
+    res.status(500).send("Internal Server Error");
+  }
+});
 
-    const services = JSON.parse(data);
-    res.render('services', { title: 'Our Services', services });
-  });
+router.get("/services/:slug", async (req, res) => {
+  try {
+    const service = await Service.findOne({ slug: req.params.slug });
+    if (!service) {
+      return res.status(404).render("404", { message: "Service not found" });
+    }
+    res.render("dynamic-service", { service });
+  } catch (err) {
+    console.error("Error loading service:", err);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 
 /* Blogs */
-router.get('/blogs', (req, res) => {
-  const blogsPath = path.join(__dirname, '../data/blogs.json');
-  fs.readFile(blogsPath, 'utf-8', (err, data) => {
-      if (err) {
-          console.error('Failed to load blogs:', err);
-          return res.status(500).send('Internal Server Error');
-      }
-
-      const blogs = JSON.parse(data);
-      res.render('blogs', { blogs });
-  });
+router.get('/blogs', async (req, res) => {
+  try {
+    const blogs = await Blog.find().sort({ date: -1 });
+    res.render('blogs', { blogs });
+  } catch (err) {
+    console.error('Failed to load blogs:', err);
+    res.status(500).send('Internal Server Error');
+  }
 });
 
 
