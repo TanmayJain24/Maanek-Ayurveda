@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const Service = require("../models/service");
 const Blog = require('../models/blog');
+const Consultation = require('../models/Consultation');
 
 
 /* Home page. */
@@ -69,8 +70,23 @@ router.get('/contact', (req, res) => {
 
 
 /* consultaion */
-router.get('/consultation', (req, res) => {
-  res.render('consultation', { title: 'Consultation' });
+router.get('/consultation', async (req, res) => {
+  try {
+    const consultations = await Consultation.find({});
+    const bookedSlots = {};
+
+    consultations.forEach(c => {
+      const dateStr = c.appointmentDate.toISOString().split('T')[0]; // YYYY-MM-DD
+      if (!bookedSlots[dateStr]) bookedSlots[dateStr] = [];
+      bookedSlots[dateStr].push(c.appointmentTime);
+    });
+
+    res.render('consultation', { bookedSlots });
+  } catch (err) {
+    console.error("Error fetching consultation data:", err);
+    res.status(500).send("Internal Server Error");
+  }
 });
+
 
 module.exports = router;

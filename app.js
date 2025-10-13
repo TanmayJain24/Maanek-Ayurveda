@@ -1,19 +1,17 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 var dotenv = require('dotenv');
-var bodyParser = require('body-parser');
 const fs = require('fs');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var servicesRouter = require('./routes/services');
-const blogRoutes = require('./routes/blogs');
+var blogRoutes = require('./routes/blogs');
 var consultationRoutes = require('./routes/consultation');
-const checkAppointmentRouter = require('./routes/checkAppointment');
+var checkAppointmentRouter = require('./routes/checkAppointment');
 
 
 dotenv.config();
@@ -46,9 +44,7 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 
@@ -59,7 +55,6 @@ mongoose.connect(process.env.MONGO_URI, {
 })
 .then(() => console.log('✅ MongoDB Connected'))
 .catch((err) => console.error('MongoDB connection error:', err));
-
 
 
 // Routes
@@ -76,29 +71,6 @@ app.get('/admin', adminAuth, (req, res) => {
   const slots = JSON.parse(fs.readFileSync(slotFile, 'utf-8'));
   res.render('admin-dashboard', { slots });
 });
-
-// Add new slot
-app.post('/admin/add-slot', adminAuth, (req, res) => {
-  const { date, time } = req.body;
-  const slotFile = path.join(__dirname, 'data/slots.json');
-  let slots = JSON.parse(fs.readFileSync(slotFile, 'utf-8'));
-
-  slots.push({ date, time });
-  fs.writeFileSync(slotFile, JSON.stringify(slots, null, 2));
-  res.redirect('/admin');
-});
-
-// Delete slot
-app.post('/admin/delete-slot', adminAuth, (req, res) => {
-  const { date, time } = req.body;
-  const slotFile = path.join(__dirname, 'data/slots.json');
-  let slots = JSON.parse(fs.readFileSync(slotFile, 'utf-8'));
-
-  slots = slots.filter(slot => !(slot.date === date && slot.time === time));
-  fs.writeFileSync(slotFile, JSON.stringify(slots, null, 2));
-  res.redirect('/admin');
-});
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

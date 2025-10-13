@@ -17,7 +17,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: 'paymentScreenshots',   // folder in Cloudinary
+    folder: 'paymentScreenshots', 
     allowed_formats: ['jpg', 'jpeg', 'png', 'webp']
   }
 });
@@ -46,7 +46,7 @@ router.post('/', upload.single('paymentScreenshot'), async (req, res) => {
     const data = new Consultation({
       ...req.body,
       diseases: Array.isArray(diseases) ? diseases : (diseases ? [diseases] : []),
-      paymentScreenshot: req.file ? req.file.path : null // Cloudinary URL
+      paymentScreenshot: req.file ? req.file.path : null
     });
 
     await data.save();

@@ -1,34 +1,31 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
-const fs = require('fs');
+const Service = require('../models/service'); // Make sure model name matches
 
-// File path
-const servicesPath = path.join(__dirname, '../data/services.json');
-let services = [];
-
-// Function to load services
-function loadServices() {
+// Route to get all services
+router.get('/', async (req, res) => {
   try {
-    const data = fs.readFileSync(servicesPath, 'utf-8');
-    services = JSON.parse(data);
+    const services = await Service.find().sort({ title: 1 }); // optional sort
+    res.render('services', { services });
   } catch (err) {
-    console.error('Failed to read services.json:', err.message);
-    services = [];
+    console.error('Error fetching services:', err);
+    res.status(500).send('Internal Server Error');
   }
-}
+});
 
-// Initial load
-loadServices();
+// Dynamic route for single service by slug
+router.get('/:slug', async (req, res) => {
+  try {
+    const service = await Service.findOne({ slug: req.params.slug });
+    if (!service) {
+      return res.status(404).render('error', { message: 'Service Not Found' });
+    }
 
-// Dynamic route
-router.get('/:slug', (req, res) => {
-  const service = services.find(s => s.slug === req.params.slug);
-  if (!service) {
-    return res.status(404).render('error', { message: 'Service Not Found' });
+    res.render('dynamic-service', { service });
+  } catch (err) {
+    console.error('Error fetching service:', err);
+    res.status(500).send('Internal Server Error');
   }
-
-  res.render('dynamic-service', { service });
 });
 
 module.exports = router;

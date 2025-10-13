@@ -43,11 +43,6 @@ const consultationSchema = new mongoose.Schema({
   appointmentDate: {
     type: Date,
     required: true,
-    set: function(value) {
-      const dateOnly = new Date(value);
-      dateOnly.setHours(0, 0, 0, 0);
-      return dateOnly;
-    }
   },
   appointmentTime: {
     type: String,

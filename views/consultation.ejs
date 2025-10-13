@@ -270,25 +270,27 @@
 
                 <!-- Appointment Details -->
                 <h3>Appointment Date</h3>
-                <div class="col-md-3">
-                    <label>Select Appointment Date<span class="required">*</span></label>
-                    <input type="date" name="appointmentDate" class="form-control" required>
-                </div>
-                <div class="col-md-3">
-                    <label>Select Appointment Time<span class="required">*</span></label>
-                    <select name="appointmentTime" class="form-select" required>
-                        <option value="" selected disabled hidden>Select Time</option>
-                        <option value="10:00 AM">10:00 AM</option>
-                        <option value="11:00 AM">11:00 AM</option>
-                        <option value="12:00 PM">12:00 PM</option>
-                        <option value="2:00 PM">2:00 PM</option>
-                        <option value="3:00 PM">3:00 PM</option>
-                        <option value="4:00 PM">4:00 PM</option>
-                        <option value="5:00 PM">5:00 PM</option>
-                        <option value="6:00 PM">6:00 PM</option>
-                        <option value="7:00 PM">7:00 PM</option>
-                    </select>
-                </div>                  
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label>Select Appointment Date<span class="required">*</span></label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" class="form-control" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Select Appointment Time<span class="required">*</span></label>
+                        <select id="appointmentTime" name="appointmentTime" class="form-select" required>
+                            <option value="" selected disabled hidden>Select Time</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                        </select>
+                    </div>
+                </div>              
 
                 <!-- Payment Instructions -->
                 <h3>Payment</h3>
@@ -365,7 +367,33 @@
     </footer>
 
 
+    <script>
+        const bookedSlots = JSON.parse('<%- JSON.stringify(bookedSlots) %>');
+        const dateInput = document.getElementById('appointmentDate');
+        const timeSelect = document.getElementById('appointmentTime');
+      
+        dateInput.addEventListener('change', () => {
+          const selectedDate = dateInput.value; // YYYY-MM-DD
+          const bookedTimes = bookedSlots[selectedDate] || [];
+      
+          Array.from(timeSelect.options).forEach(option => {
+            if (option.value === "" || option.value === "Select Time") return;
+            option.disabled = bookedTimes.includes(option.value);
+            if (option.disabled) {
+              option.style.color = "#ccc";
+            } else {
+              option.style.color = "#000";
+            }
+          });
+      
+          // Reset selected time if now disabled
+          if (bookedTimes.includes(timeSelect.value)) {
+            timeSelect.value = "";
+          }
+        });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>AOS.init();</script>
+
 </body>
 </html>
