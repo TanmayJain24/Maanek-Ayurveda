@@ -70,65 +70,70 @@
     </section>
 
 
-    <!-- Doctor Slot Management -->
-    <div class="container my-5">
-        <h2 class="mb-4">Doctor Slot Management</h2>
-      
-        <!-- Add Slot Form -->
-        <form action="/admin/add-slot" method="POST" class="row g-3 mb-4">
-          <div class="col-md-6">
-            <label for="date" class="form-label">Select Date</label>
-            <input type="date" name="date" id="date" class="form-control" required>
-          </div>
-      
-          <div class="col-md-4">
-            <label for="time" class="form-label">Select Time Slot</label>
-            <select name="time" id="time" class="form-select" required>
-              <option value="" disabled selected>Select Time</option>
-              <option value="09:00">9:00 AM - 10:00 AM</option>
-              <option value="10:00">10:00 AM - 11:00 AM</option>
-              <option value="11:00">11:00 AM - 12:00 PM</option>
-              <option value="12:00">12:00 PM - 1:00 PM</option>
-              <!-- Skipping 1 PM to 2 PM -->
-              <option value="14:00">2:00 PM - 3:00 PM</option>
-              <option value="15:00">3:00 PM - 4:00 PM</option>
-              <option value="16:00">4:00 PM - 5:00 PM</option>
-              <option value="17:00">5:00 PM - 6:00 PM</option>
-            </select>
-          </div>
-      
-          <div class="col-md-2 d-flex align-items-end">
-            <button type="submit" class="btn btn-success w-100">Add Slot</button>
-          </div>
-        </form>
-      
-        <!-- Existing Slots List -->
-        <div class="card">
-          <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">Available Slots</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <% if (slots.length === 0) { %>
-              <li class="list-group-item text-muted">No slots added yet.</li>
-            <% } else { %>
-              <% slots.forEach(slot => { %>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>
-                    <strong><%= slot.date %></strong> at 
-                    <%= new Date(`1970-01-01T${slot.time}`).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) %>
-                  </span>
-                  <form action="/admin/delete-slot" method="POST" class="d-inline">
-                    <input type="hidden" name="date" value="<%= slot.date %>">
-                    <input type="hidden" name="time" value="<%= slot.time %>">
-                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                  </form>
-                </li>
-              <% }) %>
-            <% } %>
-          </ul>
-        </div>
-    </div>
+    <!-- Admin Table -->
+    <div class="container py-5">
+      <h2 class="mb-4 text-center" style="font-weight: 600; color: #2b3a3a;">
+        Doctor Dashboard
+      </h2>
+    
+      <% if (consultations.length > 0) { %>
+        <div style="overflow-x:auto;">
+          <table 
+            class="table table-hover align-middle mb-0"
+            style="width:100%; border-collapse:collapse; text-align:center; vertical-align:middle; border:4px solid #198754;">
             
+            <thead style="background-color:#198754; color:white; border-bottom:3px solid #145c32;">
+              <tr>
+                <th style="padding:14px; border:2px solid #198754;">No.</th>
+                <th style="padding:14px; border:2px solid #198754;">Patient Name</th>
+                <th style="padding:14px; border:2px solid #198754;">Phone</th>
+                <th style="padding:14px; border:2px solid #198754;">Email Id</th>
+                <th style="padding:14px; border:2px solid #198754;">Date</th>
+                <th style="padding:14px; border:2px solid #198754;">Time</th>
+                <th style="padding:14px; border:2px solid #198754;">Payment Screenshot</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <% consultations.forEach((c, i) => { %>
+                <tr style="transition: background 0.3s;">
+                  <td style="border:2px solid #198754;"><%= i + 1 %></td>
+                  <td style="font-weight:500; border:2px solid #198754;"><%= c.fullName %></td>
+                  <td style="border:2px solid #198754;"><%= c.phone %></td>
+                  <td style="border:2px solid #198754;"><%= c.email %></td>
+                  <td style="border:2px solid #198754;">
+                    <%= new Date(c.appointmentDate).toLocaleDateString('en-IN', { day:'2-digit', month:'short', year:'numeric' }) %>
+                  </td>
+                  <td style="border:2px solid #198754;"><%= c.appointmentTime %></td>
+                  <td style="border:2px solid #198754;">
+                    <% if (c.paymentScreenshot) { %>
+                      <a href="<%= c.paymentScreenshot %>" target="_blank" 
+                         style="color:#0d6efd; text-decoration:none; font-weight:500;">
+                        View Screenshot
+                      </a>
+                    <% } else { %>
+                      <span class="text-muted" style="font-style:italic;">No screenshot</span>
+                    <% } %>
+                  </td>
+                </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+      <% } else { %>
+        <p class="text-center text-muted mt-4" style="font-size:1.1rem;">
+          No consultations booked yet.
+        </p>
+      <% } %>
+    </div>
+    
+    <style>
+      table tr:hover {
+        background-color: #f3f8f3 !important;
+      }
+    </style>
+
+               
 
       
     <!-- Footer -->

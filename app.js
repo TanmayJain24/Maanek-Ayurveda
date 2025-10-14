@@ -7,12 +7,11 @@ var dotenv = require('dotenv');
 const fs = require('fs');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var servicesRouter = require('./routes/services');
 var blogRoutes = require('./routes/blogs');
 var consultationRoutes = require('./routes/consultation');
 var checkAppointmentRouter = require('./routes/checkAppointment');
-
+var adminRouter = require("./routes/admin");
 
 dotenv.config();
 
@@ -59,18 +58,18 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/services', servicesRouter);
 app.use('/blogs', blogRoutes);
 app.use('/consultation', consultationRoutes);
 app.use('/check-appointment', checkAppointmentRouter);
+app.use("/admin", adminAuth, adminRouter);
 
 // Serve admin dashboard
-app.get('/admin', adminAuth, (req, res) => {
-  const slotFile = path.join(__dirname, 'data/slots.json');
-  const slots = JSON.parse(fs.readFileSync(slotFile, 'utf-8'));
-  res.render('admin-dashboard', { slots });
-});
+// app.get('/admin', adminAuth, (req, res) => {
+//   const slotFile = path.join(__dirname, 'data/slots.json');
+//   const slots = JSON.parse(fs.readFileSync(slotFile, 'utf-8'));
+//   res.render('admin-dashboard', { slots });
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
