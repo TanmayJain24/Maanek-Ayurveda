@@ -76,7 +76,7 @@ router.get('/consultation', async (req, res) => {
     const bookedSlots = {};
 
     consultations.forEach(c => {
-      const dateStr = c.appointmentDate.toISOString().split('T')[0]; // YYYY-MM-DD
+      const dateStr = c.appointmentDate.toISOString().split('T')[0];
       if (!bookedSlots[dateStr]) bookedSlots[dateStr] = [];
       bookedSlots[dateStr].push(c.appointmentTime);
     });

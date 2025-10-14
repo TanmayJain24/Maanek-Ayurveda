@@ -74,7 +74,8 @@
     <section class="ayur-section">
         <div class="container">
           <h2 class="text-center mb-4">Check Your Appointment</h2>
-    
+          <h5>Note: If you are unable to find your appointment schedule, please call us at 
+            <span style="font-family: 'Times New Roman'; font-weight: bold;">+91 8879791008</span></h5>
           <form action="/check-appointment" method="POST" class="row g-4">
             <div class="col-md-4">
               <label>Phone Number</label>
@@ -88,12 +89,15 @@
               <label>Appointment Time</label>
               <select name="appointmentTime" class="form-select" required>
                 <option disabled selected hidden>Select Time</option>
-                <option>10:00 AM</option>
-                <option>11:00 AM</option>
-                <option>12:00 PM</option>
-                <option>4:00 PM</option>
-                <option>5:00 PM</option>
-                <option>6:00 PM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
               </select>
             </div>
             <div class="col-12 text-center">
@@ -109,8 +113,8 @@
               <h5>Appointment Found:</h5>
               <p><strong>Name:</strong> <%= appointment.fullName %></p>
               <p><strong>Age:</strong> <%= appointment.age %></p>
-              <p><strong>Date of Birth:</strong> <%= appointment.dob.toDateString().slice(4) %></p>
               <p><strong>Phone:</strong> <%= appointment.phone %></p>
+              <p><strong>Email:</strong> <%= appointment.email %></p>
               <p><strong>Appointment Date:</strong> <%= appointment.appointmentDate.toDateString() %></p>
               <p><strong>Appointment Time:</strong> <%= appointment.appointmentTime %></p>
             </div>

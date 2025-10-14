@@ -64,13 +64,6 @@ app.use('/consultation', consultationRoutes);
 app.use('/check-appointment', checkAppointmentRouter);
 app.use("/admin", adminAuth, adminRouter);
 
-// Serve admin dashboard
-// app.get('/admin', adminAuth, (req, res) => {
-//   const slotFile = path.join(__dirname, 'data/slots.json');
-//   const slots = JSON.parse(fs.readFileSync(slotFile, 'utf-8'));
-//   res.render('admin-dashboard', { slots });
-// });
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
