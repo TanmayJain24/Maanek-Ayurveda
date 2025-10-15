@@ -78,7 +78,10 @@
                     <div class="col-md-6 col-lg-4 service-card <%= index >= 9 ? 'd-none' : '' %>">
                         <div class="ayur-card h-100 d-flex flex-column" data-aos="fade-up" data-aos-delay="<%= 100 + index * 50 %>" data-aos-duration="500">
                             <div class="ayur-card-img-container">
-                                <img src="<%= service.heroImage %>" class="ayur-card-img" alt="<%= service.title %>">
+                                <img src="/images/ServiceImages/<%= service.slug %>.jpg" 
+                                    onerror="this.onerror=null; this.src='<%= service.heroImage %>';" 
+                                    class="ayur-card-img" 
+                                    alt="<%= service.title %>">
                             </div>
                             <div class="ayur-card-body d-flex flex-column flex-grow-1">
                                 <div class="d-flex justify-content-between align-items-start ayur-mb-sm">

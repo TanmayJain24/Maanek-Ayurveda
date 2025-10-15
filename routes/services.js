@@ -1,15 +1,39 @@
 const express = require('express');
 const router = express.Router();
-const Service = require('../models/service'); // Make sure model name matches
+const fs = require('fs');
+const path = require('path');
+const Service = require('../models/service');
 
-// Route to get all services
+// Route to display all services
 router.get('/', async (req, res) => {
   try {
-    const services = await Service.find().sort({ title: 1 }); // optional sort
-    res.render('services', { services });
+    const services = await Service.find();
+
+    const updatedServices = services.map(service => {
+      const imageDir = path.join(__dirname, '..', 'public', 'images', 'ServiceImages');
+      const possibleExtensions = ['.jpg', '.jpeg', '.png'];
+      let localImagePath = null;
+
+      // Check which extension actually exists
+      for (const ext of possibleExtensions) {
+        const filePath = path.join(imageDir, `${service.slug}${ext}`);
+        if (fs.existsSync(filePath)) {
+          localImagePath = `/images/ServiceImages/${service.slug}${ext}`;
+          break;
+        }
+      }
+
+      // Use local path if available, else fallback to DB image
+      return {
+        ...service._doc,
+        displayImage: localImagePath || service.heroImage
+      };
+    });
+
+    res.render('services', { services: updatedServices });
   } catch (err) {
     console.error('Error fetching services:', err);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send('Server Error');
   }
 });
 
